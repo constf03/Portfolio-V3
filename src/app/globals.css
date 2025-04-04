@@ -2,6 +2,12 @@
   --background: #ffffff;
   --foreground: #171717;
   --page-color: linear-gradient(to bottom, navy, blue, lightblue);
+  --banner-bg: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(0, 36, 91, 0.9),
+    rgba(0, 93, 232, 0.8)
+  );
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,7 +57,7 @@ a {
   min-height: 100vh;
 }
 
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 960px) {
   .page {
     width: 960px;
     margin: 0 auto;

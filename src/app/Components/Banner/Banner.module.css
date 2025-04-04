@@ -1,20 +1,31 @@
 .banner {
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  padding: 10px 30px;
   align-items: center;
   width: 100%;
-  background-color: blue;
+  background: var(--banner-bg);
   color: white;
+  gap: 20px;
 }
 
 .portrait {
-  border-radius: 20px;
+  border-radius: 30px;
+  width: 120px;
+  height: 120px;
+  background-image: url("../../_images/con-stefano.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid orange;
+  box-shadow: 0px 0px 10px 0.5px black;
 }
 
-@media only screen and (min-width: 500px) {
-  .portrait {
-    width: 128px;
-    height: auto;
+@media only screen and (max-width: 500px) {
+  .banner {
+    justify-content: center;
   }
+}
+
+@media only screen and (min-width: 501px) {
 }

@@ -1,19 +1,17 @@
-import Image from "next/image";
 import React from "react";
-import portrait from "@/app/_images/con-stefano.jpg";
 import styles from "./Banner.module.css";
 
 export default function Banner() {
   return (
     <div className={styles.banner}>
-      <Image className={styles.portait} src={portrait} alt="" width={128} />
+      <div className={styles.portrait}></div>
       <div>
-        <h1 className="h1">
+        <h2 className="h2">
           <b>Stefano Confalone</b>
-        </h1>
-        <p className="h5">
+        </h2>
+        <h2 className="h6">
           Software Development <br /> Student Portfolio
-        </p>
+        </h2>
       </div>
     </div>
   );
