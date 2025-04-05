@@ -1,0 +1,54 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background: var(--nav-bg);
+}
+
+.linkbox {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkbox:hover {
+  border-bottom: 2px solid orange;
+  animation: forwards;
+  transition: 100ms;
+  font-weight: 700;
+}
+
+.linkbox a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.linkbox:hover a {
+  color: orange;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav {
+    gap: 30px;
+  }
+  .linkbox {
+    min-width: 60px;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .nav {
+    gap: 70px;
+  }
+
+  .linkbox {
+    min-width: 80px;
+  }
+}

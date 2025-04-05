@@ -8,6 +8,7 @@
     rgba(0, 36, 91, 0.9),
     rgba(0, 93, 232, 0.8)
   );
+  --nav-bg: linear-gradient(to bottom, #1f1f1f 50%, #000000 50%);
 }
 
 @media (prefers-color-scheme: dark) {
