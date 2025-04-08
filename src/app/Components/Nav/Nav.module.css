@@ -8,6 +8,13 @@
   background: var(--nav-bg);
 }
 
+.links_wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .linkbox {
   height: 100%;
   display: flex;
@@ -15,7 +22,8 @@
   justify-content: center;
 }
 
-.linkbox:hover {
+.linkbox:hover,
+.linkbox_current {
   border-bottom: 2px solid orange;
   animation: forwards;
   transition: 100ms;
@@ -33,25 +41,27 @@
   text-decoration: none;
 }
 
-.linkbox:hover a {
+.linkbox:hover a,
+.linkbox_current a {
   color: orange;
 }
 
 @media only screen and (max-width: 500px) {
-  .nav {
-    gap: 30px;
-  }
   .linkbox {
     min-width: 60px;
+  }
+  .links_wrapper {
+    width: 100%;
+    gap: 40px;
   }
 }
 
 @media only screen and (min-width: 501px) {
-  .nav {
-    gap: 70px;
-  }
-
   .linkbox {
     min-width: 80px;
+  }
+  .links_wrapper {
+    width: 500px;
+    gap: 50px;
   }
 }
