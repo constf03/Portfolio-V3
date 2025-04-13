@@ -24,10 +24,8 @@
 
 .linkbox:hover,
 .linkbox_current {
-  border-bottom: 2px solid orange;
-  animation: forwards;
   transition: 100ms;
-  font-weight: 700;
+  border-bottom: 2px solid orange;
 }
 
 .linkbox a {
@@ -43,6 +41,7 @@
 
 .linkbox:hover a,
 .linkbox_current a {
+  transition: 100ms;
   color: orange;
 }
 
