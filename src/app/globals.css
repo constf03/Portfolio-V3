@@ -9,6 +9,11 @@
     rgba(0, 93, 232, 0.8)
   );
   --nav-bg: linear-gradient(to bottom, #1f1f1f 50%, #000000 50%);
+  --location-bar-bg: linear-gradient(
+    to bottom,
+    rgb(58, 127, 230) 50%,
+    rgb(43, 111, 212) 50%
+  );
 }
 
 @media (prefers-color-scheme: dark) {
