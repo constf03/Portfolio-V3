@@ -25,7 +25,7 @@
 
 .linkbox:hover,
 .linkbox_current {
-  transition: 100ms;
+  transition: 300ms;
   border-bottom: 2px solid orange;
 }
 
