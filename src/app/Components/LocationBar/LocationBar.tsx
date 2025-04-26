@@ -17,7 +17,7 @@ export default function LocationBar() {
 
   return (
     <div className={styles.locationbar}>
-      <span>Portfolio {path}</span>
+      <small>Portfolio {path}</small>
     </div>
   );
 }

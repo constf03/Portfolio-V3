@@ -1,7 +1,6 @@
 .locationbar {
   width: 100%;
   color: white;
-  text-align: right;
   background: var(--location-bar-bg);
-  padding: 3px;
+  padding: 0px 15px;
 }
