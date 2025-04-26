@@ -15,6 +15,7 @@
     rgb(43, 111, 212) 50%
   );
   --content-bg: linear-gradient(to bottom, #003482c9, #0048b5bd, #3081fcba);
+  --footer-bg: linear-gradient(to bottom, #1f1f1f 50%, #000000 50%);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+  background: var(--footer-bg);
+}
+
+.footer_links {
+  display: flex;
+  gap: 10px;
+}
