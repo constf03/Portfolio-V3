@@ -1,7 +1,7 @@
 import Banner from "./Components/Banner/Banner";
 import Content from "./Components/Content/Content";
 import Footer from "./Components/Footer/Footer";
-import LocationBar from "./Components/LocationBar/LocationBar";
+import UnderNavBar from "./Components/UnderNavBar/UnderNavBar";
 import Nav from "./Components/Nav/Nav";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     <div className="page">
       <Banner />
       <Nav currentLoc="home" />
-      <LocationBar />
+      <UnderNavBar />
       <Content>
         <div></div>
       </Content>

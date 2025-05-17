@@ -19,7 +19,9 @@ export default function Footer() {
           <Image src={logo_github} width={38} height={38} alt="" />
         </Link>
       </div>
-      <small>Copyright (c) 2025 Stefano Confalone</small>
+      <small className={styles.copyright_tag}>
+        Copyright (c) 2025 Stefano Confalone
+      </small>
     </div>
   );
 }

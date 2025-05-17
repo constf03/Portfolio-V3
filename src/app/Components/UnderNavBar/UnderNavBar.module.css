@@ -1,6 +1,7 @@
-.locationbar {
+.undernavbar {
   width: 100%;
   color: white;
   background: var(--location-bar-bg);
   padding: 0px 15px;
+  height: 20px;
 }
