@@ -43,7 +43,7 @@ export default function Nav({ currentLoc }: props) {
           <Link href="/">Home</Link>
         </div>
         <div id="linkbox_showcase" className={styles.linkbox}>
-          <Link href="/showcase">Showcase</Link>
+          <Link href="/projects">Projects</Link>
         </div>
         <div id="linkbox_about" className={styles.linkbox}>
           <Link href="/about">About Me</Link>

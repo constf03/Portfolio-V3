@@ -7,8 +7,10 @@ import Nav from "./Components/Nav/Nav";
 export default function Home() {
   return (
     <div className="page">
-      <Banner />
-      <Nav currentLoc="home" />
+      <Banner>
+        {" "}
+        <Nav currentLoc="home" />
+      </Banner>
       <UnderNavBar />
       <Content>
         <div></div>

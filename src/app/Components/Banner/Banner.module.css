@@ -1,12 +1,15 @@
 .banner {
   display: flex;
-  flex-direction: row;
-  padding: 10px 30px;
-  align-items: center;
   width: 100%;
   background: var(--banner-bg);
   color: white;
+}
+
+.banner_head {
+  padding: 10px 30px;
   gap: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .portrait {
@@ -24,12 +27,32 @@
 @media only screen and (max-width: 500px) {
   .banner {
     justify-content: center;
+    flex-direction: column;
+  }
+
+  .nav_wrapper {
+    justify-self: center;
   }
 }
 
 @media only screen and (min-width: 501px) {
   .banner {
     margin-top: 50px;
+    flex-direction: column;
     border-radius: 25px 25px 0px 0px;
+  }
+
+  .nav_wrapper {
+    justify-self: center;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .banner {
+    flex-direction: row;
+  }
+
+  .nav_wrapper {
+    align-self: flex-end;
   }
 }

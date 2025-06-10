@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 10px;
   color: white;
-  background: var(--footer-bg);
+  background: var(--dual-dark);
 }
 
 .footer_links {

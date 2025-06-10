@@ -15,7 +15,13 @@
     rgb(43, 111, 212) 50%
   );
   --content-bg: linear-gradient(to bottom, #003482c9, #0048b5bd, #3081fcba);
-  --footer-bg: linear-gradient(to bottom, #1f1f1f 50%, #000000 50%);
+  --dual-dark: linear-gradient(to bottom, #1f1f1f 50%, #000000 50%);
+  --dual-orange: linear-gradient(to bottom, rgb(255, 184, 53) 50%, orange 50%);
+  --dual-orange-hover: linear-gradient(
+    to bottom,
+    rgb(255, 197, 88) 50%,
+    rgb(250, 184, 61) 50%
+  );
 }
 
 @media (prefers-color-scheme: dark) {
