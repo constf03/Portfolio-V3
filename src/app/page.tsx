@@ -5,6 +5,7 @@ import Footer from "./Components/Footer/Footer";
 import UnderNavBar from "./Components/UnderNavBar/UnderNavBar";
 import Nav from "./Components/Nav/Nav";
 import Slideshow from "./Components/Slideshow/Slideshow";
+import MarqueeBanner from "./Components/MarqueeBanner/MarqueeBanner";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Nav currentLoc="home" />
       </Banner>
       <UnderNavBar />
+      <MarqueeBanner />
       <Content>
         <div
           style={{ width: "100%", height: 24, backgroundColor: "black" }}

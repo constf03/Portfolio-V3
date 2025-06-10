@@ -1,0 +1,30 @@
+.banner_container {
+  width: 100%;
+  background: var(--marquee-bg);
+  color: white;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+
+.sliding_text {
+  white-space: nowrap;
+  display: inline-block;
+  position: absolute;
+  will-change: transform;
+  animation: slide_left 10s linear infinite;
+  width: 100%;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+@keyframes slide_left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

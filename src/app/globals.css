@@ -15,6 +15,12 @@
     rgb(43, 111, 212) 50%
   );
   --content-bg: linear-gradient(to bottom, #003482c9, #0048b5bd, #3081fcba);
+  --marquee-bg: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
   --dual-dark: linear-gradient(to bottom, #1f1f1f 50%, #000000 50%);
   --dual-orange: linear-gradient(to bottom, rgb(255, 184, 53) 50%, orange 50%);
   --dual-orange-hover: linear-gradient(
