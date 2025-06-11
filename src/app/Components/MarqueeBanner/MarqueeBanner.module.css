@@ -16,7 +16,6 @@
   will-change: transform;
   animation: slide_left 10s linear infinite;
   width: 100%;
-  font-weight: bold;
   font-size: 24px;
 }
 
