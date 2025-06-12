@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import styles from "./Banner.module.css";
+import Image from "next/image";
 
 type BannerProps = {
   children: ReactNode;
@@ -9,8 +10,14 @@ export default function Banner({ children }: BannerProps) {
   return (
     <div className={styles.banner}>
       <div className={styles.banner_head}>
-        <div className={styles.portrait}></div>
-        <div>
+        <Image
+          src="/images/con-stefano.jpg"
+          className={styles.portrait}
+          width={128}
+          height={128}
+          alt="..."
+        />
+        <div style={{ display: "flex", flexDirection: "column" }}>
           <h2 className="h2">
             <b>Stefano Confalone</b>
           </h2>
