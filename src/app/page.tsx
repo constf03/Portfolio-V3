@@ -1,11 +1,11 @@
 "use client";
-import Banner from "./Components/Banner/Banner";
-import Content from "./Components/Content/Content";
-import Footer from "./Components/Footer/Footer";
-import UnderNavBar from "./Components/UnderNavBar/UnderNavBar";
-import Nav from "./Components/Nav/Nav";
-import Slideshow from "./Components/Slideshow/Slideshow";
-import MarqueeBanner from "./Components/MarqueeBanner/MarqueeBanner";
+import Banner from "@/components/Banner/Banner";
+import Content from "@/components/Content/Content";
+import Footer from "@/components/Footer/Footer";
+import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
+import Nav from "@/components/Nav/Nav";
+import Slideshow from "@/components/Slideshow/Slideshow";
+import MarqueeBanner from "@/components/MarqueeBanner/MarqueeBanner";
 
 export default function Home() {
   return (

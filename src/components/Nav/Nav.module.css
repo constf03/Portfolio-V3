@@ -25,7 +25,6 @@
 }
 
 .linkbox:hover {
-  transition: 300ms;
   background: var(--dual-orange-hover);
 }
 

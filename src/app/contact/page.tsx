@@ -1,10 +1,9 @@
-"use client";
-import Banner from "../Components/Banner/Banner";
-import Content from "../Components/Content/Content";
-import Footer from "../Components/Footer/Footer";
-import UnderNavBar from "../Components/UnderNavBar/UnderNavBar";
-import Nav from "../Components/Nav/Nav";
-import ContactForm from "../Components/ContactForm/ContactForm";
+import Banner from "@/components/Banner/Banner";
+import Content from "@/components/Content/Content";
+import Footer from "@/components/Footer/Footer";
+import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
+import Nav from "@/components/Nav/Nav";
+import ContactForm from "@/components/ContactForm/ContactForm";
 
 export default function Home() {
   return (

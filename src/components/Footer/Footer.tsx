@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./Footer.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import logo_linkedin from "@/app/_images/LinkedIn_logo_initials.png";
-import logo_github from "@/app/_images/github.png";
+import logo_linkedin from "../../public/images/LinkedIn_logo_initials.png";
+import logo_github from "../../public/images/github.png";
 
 export default function Footer() {
   return (
