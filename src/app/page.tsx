@@ -9,23 +9,28 @@ import MarqueeBanner from "@/components/MarqueeBanner/MarqueeBanner";
 
 export default function Home() {
   return (
-    <div className="page">
-      <Banner>
-        <Nav currentLoc="home" />
-      </Banner>
-      <UnderNavBar />
-      <MarqueeBanner />
-      <Content>
-        <div
-          style={{ width: "100%", height: 24, backgroundColor: "black" }}
-        ></div>
-        <Slideshow />
-        <div
-          style={{ width: "100%", height: 24, backgroundColor: "black" }}
-        ></div>
-        <div></div>
-      </Content>
-      <Footer />
-    </div>
+    <>
+      <div className="page">
+        <Banner>
+          <Nav currentLoc="home" />
+        </Banner>
+        <UnderNavBar />
+        <MarqueeBanner />
+        <Content>
+          <div
+            style={{ width: "100%", height: 24, backgroundColor: "black" }}
+          ></div>
+          <Slideshow />
+          <div
+            style={{ width: "100%", height: 24, backgroundColor: "black" }}
+          ></div>
+          <div></div>
+        </Content>
+        <Footer />
+      </div>
+      <div className="bg-one"></div>
+      <div className="bg-fade"></div>
+      <div className="bg-two"></div>
+    </>
   );
 }

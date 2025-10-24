@@ -20,7 +20,7 @@ export default function Footer() {
         </Link>
       </div>
       <small className={styles.copyright_tag}>
-        Copyright (c) 2025 Stefano Confalone
+        Copyright (c) 2025 Stefano Confalone | Personal Website
       </small>
     </div>
   );

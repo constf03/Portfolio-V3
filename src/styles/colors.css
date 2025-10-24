@@ -1,10 +1,11 @@
 :root {
   --page-color: linear-gradient(to bottom, navy, blue, lightblue);
+  --page-border: linear-gradient(to bottom, gray, lightgray, whitesmoke);
   --banner-bg: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.8),
-    rgba(0, 36, 91, 0.9),
-    rgba(0, 93, 232, 0.8)
+    rgba(0, 36, 91, 0.7),
+    rgba(0, 93, 232, 0.5)
   );
   --nav-bg: linear-gradient(to bottom, #1f1f1f 50%, #000000 50%);
   --location-bar-bg: linear-gradient(

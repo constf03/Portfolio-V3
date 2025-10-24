@@ -22,7 +22,7 @@ export default function Banner({ children }: BannerProps) {
             <b>Stefano Confalone</b>
           </h2>
           <h2 className="h6">
-            Software Development <br /> Student Portfolio
+            <i>My Software Development Portfolio</i>
           </h2>
         </div>
       </div>

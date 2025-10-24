@@ -67,7 +67,8 @@ export default function ContactForm() {
       className={styles.contact_form}
       style={{ margin: 24 }}
     >
-      <h2 className="h2">Contact Me</h2>
+      <h2 className="h2">Contact Me Directly</h2>
+      <p>Feel free to contact me to discuss work opportunities etc.</p>
       <Form.Group as={Col} controlId="formGridName" style={{ marginTop: 8 }}>
         <Form.Label>Name</Form.Label>
         <Form.Control

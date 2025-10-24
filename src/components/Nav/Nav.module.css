@@ -21,6 +21,9 @@
   align-items: center;
   justify-content: center;
   background: var(--location-bar-bg);
+  border-top: 2px solid orange;
+  border-left: 2px solid orange;
+  border-right: 2px solid orange;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -30,6 +33,13 @@
 
 .linkbox_current {
   background: var(--dual-orange);
+}
+
+.linkbox:hover,
+.linkbox_current {
+  border-top: 2px solid rgb(0, 128, 255);
+  border-left: 2px solid rgb(0, 128, 255);
+  border-right: 2px solid rgb(0, 128, 255);
 }
 
 .linkbox a {
