@@ -4,6 +4,7 @@
   padding: 10px;
   color: white;
   background: var(--dual-dark);
+  bottom: 0;
 }
 
 .footer_links {

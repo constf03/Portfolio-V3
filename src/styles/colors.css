@@ -1,6 +1,5 @@
 :root {
   --page-color: linear-gradient(to bottom, navy, blue, lightblue);
-  --page-border: linear-gradient(to bottom, gray, lightgray, whitesmoke);
   --banner-bg: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.8),

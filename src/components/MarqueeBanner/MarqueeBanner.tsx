@@ -1,14 +1,18 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 import styles from "./MarqueeBanner.module.css";
 
 export default function MarqueeBanner() {
   return (
     <div className={styles.banner_container}>
-      <span className={styles.sliding_text}>
-        <b>
-          <i>Welcome To My Portfolio!</i>
-        </b>
-      </span>
+      <Marquee speed={80}>
+        <span>Welcome to my portfolio!</span>
+        {/* prettier-ignore */ "     "}
+        <span>Full stack web and mobile development</span>
+        {/* prettier-ignore */ "     "}
+        <span>+358 45 324 3803 | stefano.confalone03@gmail.com</span>
+        {/* prettier-ignore */ "     "}
+      </Marquee>
     </div>
   );
 }
