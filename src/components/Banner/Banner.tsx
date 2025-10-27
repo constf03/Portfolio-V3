@@ -21,9 +21,10 @@ export default function Banner({ children }: BannerProps) {
           <h2 className="h2">
             <b>Stefano Confalone</b>
           </h2>
-          <h2 className="h6">
+          <span>
             <i>My Software Development Portfolio</i>
-          </h2>
+          </span>
+          <small>Bachelor of Engineering (JAMK 2025)</small>
         </div>
       </div>
       <div className={styles.nav_wrapper}>{children}</div>

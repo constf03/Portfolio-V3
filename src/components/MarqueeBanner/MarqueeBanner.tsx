@@ -6,12 +6,14 @@ export default function MarqueeBanner() {
   return (
     <div className={styles.banner_container}>
       <Marquee speed={80}>
-        <span>Welcome to my portfolio!</span>
+        <span>
+          <i>Welcome to my portfolio!</i>
+        </span>
         {/* prettier-ignore */ "     "}
         <span>Full stack web and mobile development</span>
         {/* prettier-ignore */ "     "}
         <span>+358 45 324 3803 | stefano.confalone03@gmail.com</span>
-        {/* prettier-ignore */ "     "}
+        {/* prettier-ignore */ "                                             "}
       </Marquee>
     </div>
   );
