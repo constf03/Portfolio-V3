@@ -26,7 +26,7 @@ export default function Home() {
               style={{ width: "100%", height: 24, backgroundColor: "black" }}
             ></div>
             <div></div>
-            <section>
+            <section style={{ marginBottom: "100px", padding: "8px" }}>
               <h2>Header</h2>
               <p>fbaubfuaebfaeufaiwefaewbfaibabefabiefibeaeifn</p>
             </section>

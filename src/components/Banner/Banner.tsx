@@ -18,7 +18,7 @@ export default function Banner({ children }: BannerProps) {
           alt="..."
         />
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <h2 className="h2">
+          <h2 className={styles.name_tag}>
             <b>Stefano Confalone</b>
           </h2>
           <span>
