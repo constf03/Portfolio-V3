@@ -40,7 +40,6 @@
   border-top: 2px solid rgb(0, 128, 255);
   border-left: 2px solid rgb(0, 128, 255);
   border-right: 2px solid rgb(0, 128, 255);
-  transition: 500ms;
 }
 
 .linkbox a {

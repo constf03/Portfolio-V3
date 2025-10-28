@@ -5,6 +5,13 @@
   color: white;
 }
 
+.banner_overlay {
+  background-image: url("../../public/images/glass_overlay02.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .banner_head {
   padding: 10px 30px;
   gap: 20px;
@@ -35,6 +42,10 @@
     border-radius: 25px 25px 0px 0px;
   }
 
+  .banner_overlay {
+    border-radius: 25px 25px 0px 0px;
+  }
+
   .name_tag {
     white-space: nowrap;
   }
@@ -44,7 +55,7 @@
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 960px) {
   .banner {
     flex-direction: row;
   }
