@@ -8,6 +8,9 @@ import logo_github from "../../public/images/github.png";
 export default function Footer() {
   return (
     <div className={styles.footer}>
+      <small className={styles.copyright_tag}>
+        Stefano Confalone | Personal Website
+      </small>
       <div className={styles.footer_links}>
         <Link
           href="https://www.linkedin.com/in/stefano-confalone-a0ba352a7/"
@@ -19,9 +22,6 @@ export default function Footer() {
           <Image src={logo_github} width={38} height={38} alt="" />
         </Link>
       </div>
-      <small className={styles.copyright_tag}>
-        Copyright (c) 2025 Stefano Confalone | Personal Website
-      </small>
     </div>
   );
 }

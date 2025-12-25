@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Confalone Stefano's Portfolio - Contact",
-  description: "Find my contact information here.",
+  title: "Contact - Stefano Confalone Sofware Development Portfolio",
+  description: "Software pevelopment portfolio contact page.",
 };
 
 export default function RootLayout({

@@ -4,7 +4,8 @@ import styles from "./MarqueeBanner.module.css";
 
 export default function MarqueeBanner() {
   return (
-    <div className={styles.banner_container}>
+    <div className={styles.marquee_container}>
+      <div className={styles.marquee_fade_left}></div>
       <Marquee speed={80}>
         <span>
           <i>Welcome to my portfolio!</i>
@@ -15,6 +16,7 @@ export default function MarqueeBanner() {
         <span>+358 45 324 3803 | stefano.confalone03@gmail.com</span>
         {/* prettier-ignore */ "                                             "}
       </Marquee>
+      <div className={styles.marquee_fade_right}></div>
     </div>
   );
 }

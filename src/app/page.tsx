@@ -18,6 +18,7 @@ export default function Home() {
           <UnderNavBar />
           <MarqueeBanner />
           <Content>
+            {/*
             <div
               style={{ width: "100%", height: 24, backgroundColor: "black" }}
             ></div>
@@ -26,9 +27,23 @@ export default function Home() {
               style={{ width: "100%", height: 24, backgroundColor: "black" }}
             ></div>
             <div></div>
+            */}
             <section style={{ marginBottom: "100px", padding: "8px" }}>
-              <h2>Header</h2>
-              <p>fbaubfuaebfaeufaiwefaewbfaibabefabiefibeaeifn</p>
+              <h2>Welcome! Tervetuloa! &#128075;</h2>
+              <p>
+                This is my personal portfolio website I created using NextJS.
+              </p>
+              <p>
+                I graduated Jyväskylä University of Applied Sciences (Jamk) in
+                December 2025 with a Bachelor of Engineering degree in
+                information and communication technology.
+              </p>
+              <p>
+                On this website you can find showcases of my software
+                development-related projects and information about my
+                competences.
+              </p>
+              <p></p>
             </section>
           </Content>
           <Footer />

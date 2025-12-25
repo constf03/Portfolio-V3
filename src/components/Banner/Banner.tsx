@@ -16,7 +16,8 @@ export default function Banner({ children }: BannerProps) {
             className={styles.portrait}
             width={128}
             height={128}
-            alt="..."
+            alt="Stefano Confalone"
+            loading="lazy"
           />
           <div style={{ display: "flex", flexDirection: "column" }}>
             <h2 className={styles.name_tag}>
@@ -25,7 +26,10 @@ export default function Banner({ children }: BannerProps) {
             <span>
               <i>My Software Development Portfolio</i>
             </span>
-            <small>Bachelor of Engineering (JAMK 2025)</small>
+            <span style={{ fontSize: "10px" }}>
+              Bachelor of Engineering, Information and Communication Technology
+              (Jamk 2025)
+            </span>
           </div>
         </div>
         <div className={styles.nav_wrapper}>{children}</div>
