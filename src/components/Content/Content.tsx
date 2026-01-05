@@ -6,7 +6,9 @@ interface ContentProps {
 }
 
 const Content: FC<ContentProps> = ({ children }: ContentProps) => {
-  return <div className={styles.container_content}>{children}</div>;
+  return (
+    <div className={`${styles.container_content} page-main`}>{children}</div>
+  );
 };
 
 export default Content;

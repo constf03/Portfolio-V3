@@ -16,7 +16,7 @@ export default function AboutPage() {
           </Banner>
           <UnderNavBar />
           <Content>
-            <BreadcrumbBar />
+            <BreadcrumbBar text="/ About" />
             <section style={{ marginBottom: "100px", padding: "8px" }}>
               <section style={{ margin: "8px" }}>
                 <h3 className="h3">IT Work Experience</h3>
