@@ -98,3 +98,33 @@ a {
     width: 960px;
   }
 }
+
+.container-work-expr {
+  display: flex;
+  flex-direction: column;
+  margin: 6px;
+  margin-top: 16px;
+  padding: 6px;
+  background-color: rgba(0, 255, 174, 0.6);
+  background-image: url("../public/images/glass_overlay02.png");
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border: 1px solid gray;
+  box-shadow: 0px 0px 15px 0px black;
+}
+
+.container-work-expr span {
+  padding-left: 42px;
+}
+
+.container-edu {
+  display: flex;
+  flex-direction: column;
+  margin: 6px;
+  margin-top: 16px;
+  padding: 6px;
+  background-color: rgba(0, 255, 242, 0.2);
+  background-image: url("../public/images/glass_overlay02.png");
+  border: 1px solid gray;
+  box-shadow: 0px 0px 15px 0px black;
+}

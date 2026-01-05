@@ -8,17 +8,3 @@
   white-space: pre-wrap;
   font-size: large;
 }
-
-.marquee_fade_left {
-  width: 80px;
-  height: 100%;
-  place-self: start;
-  background: linear-gradient(to right, black, transparent);
-}
-
-.marquee_fade_right {
-  width: 80px;
-  height: 100%;
-  place-self: end;
-  background: linear-gradient(to left, white, transparent);
-}

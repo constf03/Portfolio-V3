@@ -31,8 +31,16 @@
     flex-direction: column;
   }
 
+  .banner_head {
+    align-items: center;
+  }
+
   .nav_wrapper {
     justify-self: center;
+  }
+
+  .education_tag {
+    display: none;
   }
 }
 

@@ -7,7 +7,7 @@ import logo_github from "../../public/images/github.png";
 
 export default function Footer() {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <small className={styles.copyright_tag}>
         Stefano Confalone | Personal Website
       </small>
@@ -16,12 +16,17 @@ export default function Footer() {
           href="https://www.linkedin.com/in/stefano-confalone-a0ba352a7/"
           target="blank"
         >
-          <Image src={logo_linkedin} width={38} height={38} alt="" />
+          <Image
+            src={logo_linkedin}
+            width={34}
+            height={34}
+            alt="LinkedIn logo"
+          />
         </Link>
         <Link href="https://github.com/constf03" target="blank">
-          <Image src={logo_github} width={38} height={38} alt="" />
+          <Image src={logo_github} width={34} height={34} alt="GitHub logo" />
         </Link>
       </div>
-    </div>
+    </footer>
   );
 }

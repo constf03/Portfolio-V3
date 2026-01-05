@@ -2,12 +2,12 @@
 import Banner from "@/components/Banner/Banner";
 import Content from "@/components/Content/Content";
 import Footer from "@/components/Footer/Footer";
-import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
-import Nav from "@/components/Nav/Nav";
-import Slideshow from "@/components/Slideshow/Slideshow";
 import MarqueeBanner from "@/components/MarqueeBanner/MarqueeBanner";
+import Nav from "@/components/Nav/Nav";
+import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
+//import Slideshow from "@/components/Slideshow/Slideshow";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <div className="page">
@@ -35,8 +35,8 @@ export default function Home() {
               </p>
               <p>
                 I graduated Jyväskylä University of Applied Sciences (Jamk) in
-                December 2025 with a Bachelor of Engineering degree in
-                information and communication technology.
+                Finland in December 2025 with a Bachelor of Engineering degree
+                in information and communication technology.
               </p>
               <p>
                 On this website you can find showcases of my software

@@ -26,9 +26,9 @@ export default function Banner({ children }: BannerProps) {
             <span>
               <i>My Software Development Portfolio</i>
             </span>
-            <span style={{ fontSize: "10px" }}>
+            <span className={styles.education_tag} style={{ fontSize: "10px" }}>
               Bachelor of Engineering, Information and Communication Technology
-              (Jamk 2025)
+              (Jamk 2025) &#127891;
             </span>
           </div>
         </div>

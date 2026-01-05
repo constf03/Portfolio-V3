@@ -5,33 +5,21 @@ import Content from "@/components/Content/Content";
 import Footer from "@/components/Footer/Footer";
 import Nav from "@/components/Nav/Nav";
 import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
-//import ContactForm from "@/components/ContactForm/ContactForm";
 
-export default function ContactPage() {
+export default function ProjectsPage() {
   return (
     <>
       <div className="page">
         <div className="page-content">
           <Banner>
-            <Nav currentLoc="contact" />
+            <Nav currentLoc="showcase" />
           </Banner>
           <UnderNavBar />
           <Content>
             <BreadcrumbBar />
-            <section style={{ marginBottom: "100px", padding: "8px" }}>
-              {/* <ContactForm /> */}
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  padding: "8px",
-                }}
-              >
-                <h3 className="h3">Contact Information</h3>
-                <span>Email: stefano.confalone03@gmail.com</span>
-                <span>Phone: +358 45 324 3803</span>
-              </div>
-            </section>
+            <section
+              style={{ marginBottom: "100px", padding: "8px" }}
+            ></section>
           </Content>
           <Footer />
         </div>
