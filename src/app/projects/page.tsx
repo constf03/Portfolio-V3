@@ -20,27 +20,54 @@ export default function ProjectsPage() {
           <Content>
             <BreadcrumbBar text="/ Projects" />
             <section style={{ marginBottom: "100px", padding: "8px" }}>
-              <h2>Projects showcase</h2>
-              <section id="section-showcase">
-                <div>
+              <h1 className="h1">Projects Showcase</h1>
+              <hr></hr>
+              <section className="container-showcase">
+                <div className="container-showcase-item">
                   <h4>Website For a Restaurant</h4>
                   <span>Topic: full stack web development</span>
-                  <div className="mt-2">
+                  <div className="wrapper-showcase-img mt-2">
                     <Image
                       src="/images/outside01.jpg"
-                      width={256}
-                      height={256}
+                      width={1}
+                      height={1}
+                      layout="responsive"
                       alt="restaurant"
+                      loading="lazy"
                     />
                   </div>
-                  <p></p>
-                  <Button>Read more</Button>
+                  <p>
+                    I created and updated the website of oriental restaurant
+                    Ravintola Johnny Hong Kong Hyvinkää in my 2024 and 2025
+                    internship.
+                  </p>
+                  <Button>Read more about this project</Button>
                 </div>
-                <div>
+                <div className="container-showcase-item">
                   <h4>Job Offer Letter Creation App</h4>
                   <span>Topic: low-code development</span>
                   <div></div>
-                  <Button>Read more</Button>
+                  <Button>Read more about this project</Button>
+                </div>
+                <div className="container-showcase-item">
+                  <h4>KRJ Admin</h4>
+                  <span>Topic: mobile development</span>
+                  <div></div>
+                  <Button>Read more about this project</Button>
+                </div>
+                <div className="container-showcase-item">
+                  <h4>{"Full stack game: 'Meteorite destroyers'"}</h4>
+                  <span>Topic: full stack development</span>
+                  <div>
+                    <Image
+                      src="/images/game_preview.png"
+                      width={1}
+                      height={1}
+                      layout="responsive"
+                      alt="meteorite destroyers preview"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
               </section>
             </section>

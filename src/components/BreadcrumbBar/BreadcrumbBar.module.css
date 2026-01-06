@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding: 6px;
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
 }
 
 .link_text {
