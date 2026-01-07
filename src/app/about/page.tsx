@@ -20,6 +20,7 @@ export default function AboutPage() {
             <section style={{ marginBottom: "100px", padding: "8px" }}>
               <section style={{ margin: "8px" }}>
                 <h3 className="h3">IT Work Experience</h3>
+                <hr></hr>
                 <div className="container-work-expr">
                   <h5>
                     <b>Thesis work (Riihisoft Oy)</b>
@@ -41,9 +42,11 @@ export default function AboutPage() {
                   <span>May-August 2024</span>
                   <span>Full stack web development</span>
                 </div>
+                <hr></hr>
                 <h3 className="h3" style={{ marginTop: "46px" }}>
                   Education
                 </h3>
+                <hr></hr>
                 <div className="container-edu">
                   <h5>
                     Bachelor of Engineering, Information and Communication
@@ -57,6 +60,7 @@ export default function AboutPage() {
                   <span>Riihimäen lukio</span>
                   <span>August 2019 - June 2022</span>
                 </div>
+                <hr></hr>
               </section>
             </section>
           </Content>

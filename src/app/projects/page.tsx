@@ -6,6 +6,9 @@ import Content from "@/components/Content/Content";
 import Footer from "@/components/Footer/Footer";
 import Nav from "@/components/Nav/Nav";
 import Image from "next/image";
+import Image01 from "@/public/images/krj_website_preview.jpg";
+import Image02 from "@/public/images/offerletterapp_preview.png";
+import Image03 from "@/public/images/game_preview.png";
 import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
 
 export default function ProjectsPage() {
@@ -28,12 +31,13 @@ export default function ProjectsPage() {
                   <span>Topic: full stack web development</span>
                   <div className="wrapper-showcase-img mt-2">
                     <Image
-                      src="/images/outside01.jpg"
+                      src={Image01}
                       width={1}
                       height={1}
                       layout="responsive"
-                      alt="restaurant"
+                      alt="restaurant website project preview"
                       loading="lazy"
+                      placeholder="blur"
                     />
                   </div>
                   <p>
@@ -41,32 +45,52 @@ export default function ProjectsPage() {
                     Ravintola Johnny Hong Kong Hyvinkää in my 2024 and 2025
                     internship.
                   </p>
-                  <Button>Read more about this project</Button>
+                  <div className="wrapper-showcase-button">
+                    <Button>Read more about this project</Button>
+                  </div>
                 </div>
                 <div className="container-showcase-item">
                   <h4>Job Offer Letter Creation App</h4>
                   <span>Topic: low-code development</span>
-                  <div></div>
-                  <Button>Read more about this project</Button>
+                  <div className="wrapper-showcase-img mt-2">
+                    <Image
+                      src={Image02}
+                      width={1}
+                      height={1}
+                      layout="responsive"
+                      alt="offer letter app preview"
+                      loading="lazy"
+                      placeholder="blur"
+                    />
+                  </div>
+                  <div className="wrapper-showcase-button">
+                    <Button>Read more about this project</Button>
+                  </div>
                 </div>
                 <div className="container-showcase-item">
                   <h4>KRJ Admin</h4>
                   <span>Topic: mobile development</span>
                   <div></div>
-                  <Button>Read more about this project</Button>
+                  <div className="wrapper-showcase-button">
+                    <Button>Read more about this project</Button>
+                  </div>
                 </div>
                 <div className="container-showcase-item">
                   <h4>{"Full stack game: 'Meteorite destroyers'"}</h4>
                   <span>Topic: full stack development</span>
                   <div>
                     <Image
-                      src="/images/game_preview.png"
+                      src={Image03}
                       width={1}
                       height={1}
                       layout="responsive"
                       alt="meteorite destroyers preview"
                       loading="lazy"
+                      placeholder="blur"
                     />
+                  </div>
+                  <div className="wrapper-showcase-button">
+                    <Button>Read more about this project</Button>
                   </div>
                 </div>
               </section>
