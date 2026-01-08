@@ -9,6 +9,10 @@ import Image from "next/image";
 import Image01 from "@/public/images/krj_website_preview.jpg";
 import Image02 from "@/public/images/offerletterapp_preview.png";
 import Image03 from "@/public/images/game_preview.png";
+import Image04 from "@/public/images/krj-admin-preview.png";
+import Image05 from "@/public/images/iptv_preview.png";
+import Image06 from "@/public/images/mobile_apps_preview.png";
+import Link from "next/link";
 import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
 
 export default function ProjectsPage() {
@@ -27,9 +31,9 @@ export default function ProjectsPage() {
               <hr></hr>
               <section className="container-showcase">
                 <div className="container-showcase-item">
-                  <h4>Website For a Restaurant</h4>
+                  <h4 className="h5">Website For a Restaurant (2024-2025)</h4>
                   <span>Topic: full stack web development</span>
-                  <div className="wrapper-showcase-img mt-2">
+                  <div className="mt-2">
                     <Image
                       src={Image01}
                       width={1}
@@ -46,13 +50,21 @@ export default function ProjectsPage() {
                     internship.
                   </p>
                   <div className="wrapper-showcase-button">
-                    <Button>Read more about this project</Button>
+                    <Button>
+                      <Link
+                        href="projects/website-for-a-restaurant-(2024-2025)"
+                        style={{ color: "white" }}
+                      >
+                        Read more about this project
+                      </Link>
+                    </Button>
                   </div>
                 </div>
+
                 <div className="container-showcase-item">
-                  <h4>Job Offer Letter Creation App</h4>
+                  <h4 className="h5">Job Offer Letter Creation App (2025)</h4>
                   <span>Topic: low-code development</span>
-                  <div className="wrapper-showcase-img mt-2">
+                  <div className="mt-2">
                     <Image
                       src={Image02}
                       width={1}
@@ -63,22 +75,110 @@ export default function ProjectsPage() {
                       placeholder="blur"
                     />
                   </div>
+                  <p>
+                    {`
+                        Developed in Power Apps Studio, this business application facilitates the creation of job offer letters.
+                        This project was part of my 2025 Bachelor's thesis.
+                      `}
+                  </p>
                   <div className="wrapper-showcase-button">
-                    <Button>Read more about this project</Button>
+                    <Button>
+                      <Link
+                        href="projects/job-offer-letter-creation-app-(2025)"
+                        style={{ color: "white" }}
+                      >
+                        Read more about this project
+                      </Link>
+                    </Button>
                   </div>
                 </div>
+
                 <div className="container-showcase-item">
-                  <h4>KRJ Admin</h4>
+                  <h4 className="h5">KRJ Admin (2025)</h4>
                   <span>Topic: mobile development</span>
-                  <div></div>
+                  <div className="mt-2">
+                    <Image
+                      src={Image04}
+                      width={1}
+                      height={1}
+                      layout="responsive"
+                      alt="KRJ ADMIN preview"
+                      loading="lazy"
+                      placeholder="blur"
+                    />
+                  </div>
+                  <p>
+                    {`
+                        With React Native & Expo I created this mobile application for handling customer orders.
+                        This project was part of my 2025 internship, and the software is meant to be
+                        private property of oriental restaurant Ravintola Johnny Hong Kong Hyvinkää.
+                      `}
+                  </p>
+                  <div className="wrapper-showcase-button">
+                    <Button>
+                      <Link
+                        href="projects/krj-admin-(2025)"
+                        style={{ color: "white" }}
+                      >
+                        Read more about this project
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="container-showcase-item">
+                  <h4 className="h5">Fictional IPTV Website (2024)</h4>
+                  <span>Topic: web development & design</span>
+                  <div className="mt-2">
+                    <Image
+                      src={Image05}
+                      width={1}
+                      height={1}
+                      layout="responsive"
+                      alt="IPTV website preview"
+                      loading="lazy"
+                      placeholder="blur"
+                    />
+                  </div>
+                  <p>
+                    A fictional IPTV service website that I made on a web
+                    visualization course. It is a frontend-only implementation.
+                    The main focus of the site is its visual outlook and
+                    responsiveness. Used Bootstrap and SCSS pre-processor.
+                  </p>
                   <div className="wrapper-showcase-button">
                     <Button>Read more about this project</Button>
                   </div>
                 </div>
+
                 <div className="container-showcase-item">
-                  <h4>{"Full stack game: 'Meteorite destroyers'"}</h4>
-                  <span>Topic: full stack development</span>
-                  <div>
+                  <h4 className="h5">React Native Mobile Apps (2024)</h4>
+                  <span>Topic: mobile development</span>
+                  <div className="mt-2">
+                    <Image
+                      src={Image06}
+                      width={1}
+                      height={1}
+                      layout="responsive"
+                      alt="mobile apps preview"
+                      loading="lazy"
+                      placeholder="blur"
+                    />
+                  </div>
+                  <p>
+                    A collection of simple React Native mobile applications.
+                  </p>
+                  <div className="wrapper-showcase-button">
+                    <Button>Read more about this project</Button>
+                  </div>
+                </div>
+
+                <div className="container-showcase-item">
+                  <h4 className="h5">
+                    {"Full stack game: 'Meteorite destroyers' (2023)"}
+                  </h4>
+                  <span>Topic: full stack web development</span>
+                  <div className="mt-2">
                     <Image
                       src={Image03}
                       width={1}
@@ -89,11 +189,16 @@ export default function ProjectsPage() {
                       placeholder="blur"
                     />
                   </div>
+                  <p>
+                    A game made using Phaser.js framework. This was my first
+                    full stack implementation.
+                  </p>
                   <div className="wrapper-showcase-button">
                     <Button>Read more about this project</Button>
                   </div>
                 </div>
               </section>
+              <hr></hr>
             </section>
           </Content>
           <Footer />
