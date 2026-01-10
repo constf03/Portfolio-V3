@@ -15,8 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Job Offer Letter Creation App (2025) - Stefano Confalone Sofware Development Portfolio",
+  title: "KRJ Admin (2025) - Stefano Confalone Sofware Development Portfolio",
   description: "Software development portfolio projects showcase page.",
 };
 

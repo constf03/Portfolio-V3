@@ -59,7 +59,7 @@ export default function Page() {
                   width={1}
                   height={1}
                   layout="responsive"
-                  alt="restaurant website project preview"
+                  alt="job offer letter app preview"
                   loading="lazy"
                   placeholder="blur"
                 />

@@ -109,7 +109,7 @@ export default function ProjectsPage() {
                   </div>
                   <p>
                     {`
-                        With React Native & Expo I created this mobile application for handling customer orders.
+                        With React Native & Expo I created a mobile application for handling customer orders.
                         This project was part of my 2025 internship, and the software is meant to be
                         private property of oriental restaurant Ravintola Johnny Hong Kong Hyvinkää.
                       `}
@@ -166,7 +166,8 @@ export default function ProjectsPage() {
                     />
                   </div>
                   <p>
-                    A collection of simple React Native mobile applications.
+                    A collection of simple React Native mobile applications that
+                    I made on a mobile app development course in 2024.
                   </p>
                   <div className="wrapper-showcase-button">
                     <Button>Read more about this project</Button>
