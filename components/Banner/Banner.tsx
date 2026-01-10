@@ -1,10 +1,11 @@
-import React, { ReactNode } from "react";
-import styles from "./Banner.module.css";
 import Image from "next/image";
+import { ReactNode } from "react";
+import Image01 from "@/public/images/con-stefano.jpg";
+import styles from "./Banner.module.css";
 
-type BannerProps = {
+interface BannerProps {
   children: ReactNode;
-};
+}
 
 export default function Banner({ children }: BannerProps) {
   return (
@@ -12,7 +13,7 @@ export default function Banner({ children }: BannerProps) {
       <div className={styles.banner}>
         <div className={styles.banner_head}>
           <Image
-            src="/images/con-stefano.jpg"
+            src={Image01}
             className={styles.portrait}
             width={128}
             height={128}
