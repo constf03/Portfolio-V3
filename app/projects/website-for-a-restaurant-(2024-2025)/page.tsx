@@ -5,6 +5,9 @@ import Content from "@/components/Content/Content";
 import Footer from "@/components/Footer/Footer";
 import Nav from "@/components/Nav/Nav";
 import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
+import Video from "next-video";
+import Video01 from "/videos/krj_demo.mp4";
+import Video02 from "/videos/krj_preview01.mp4";
 
 export default function Page() {
   return (
@@ -61,11 +64,8 @@ export default function Page() {
                 In the demo I also show the admin panel.
               </p>
 
-              <div>
-                <video width="320" height="240" controls preload="none">
-                  <source src="videos/krj_demo.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              <div className="mt-4 mb-4">
+                <Video src={Video01} />
               </div>
 
               <p>
@@ -77,11 +77,8 @@ export default function Page() {
                   `}
               </p>
 
-              <div>
-                <video width="320" height="240" controls preload="none">
-                  <source src="videos/krj_preview01.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              <div className="mt-4 mb-4">
+                <Video src={Video02} />
               </div>
 
               <p>
