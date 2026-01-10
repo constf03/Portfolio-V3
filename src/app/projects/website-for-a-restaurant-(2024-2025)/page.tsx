@@ -23,27 +23,14 @@ export default function Page() {
             />
             <article style={{ padding: "14px" }}>
               <h2>Website For a Restaurant (2024-2025)</h2>
-              <p>Last updated: Jan. 8, 2026</p>
+              <p>Last updated: Jan. 9, 2026</p>
 
               <p>
                 In my 2024 internship under Tmi J.J.Wessman I began working on a
                 full stack website project for restaurant Ravintola Johnny Hong
-                Kong Hyvinkää.
+                Kong Hyvinkää. The supervisor of the internship is a co-owner of
+                the restaurant.
               </p>
-
-              <p>
-                During my first internship (2024) I managed to implement the
-                following features to the site.
-              </p>
-              <ul>
-                <li>user authentication</li>
-                <li>updating user information</li>
-                <li>products to food menu (dynamically loaded JSON objects)</li>
-                <li>admin user feature</li>
-                <li>a simple ordering system (no payment integration)</li>
-                <li>localization in Finnish and English</li>
-                <li>responsive UI</li>
-              </ul>
 
               <p>
                 Link to the website:{" "}
@@ -53,12 +40,49 @@ export default function Page() {
               </p>
 
               <p>
+                During my first internship (2024) I managed to implement the
+                following features to the site:
+              </p>
+              <ul>
+                <li>user authentication</li>
+                <li>updating user information</li>
+                <li>products to food menu (dynamically loaded JSON objects)</li>
+                <li>admin user feature</li>
+                <li>
+                  ordering system with real-time order status update (no payment
+                  integration yet)
+                </li>
+                <li>localization in Finnish and English</li>
+                <li>responsive UI.</li>
+              </ul>
+
+              <p>
+                Here is a demo showcase of what the website looked like in 2024.
+                In the demo I also show the admin panel.
+              </p>
+
+              <div>
+                <video width="320" height="240" controls preload="none">
+                  <source src="videos/krj_demo.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <p>
                 {`
                     A year later in my second internship (2025) under the same freelancing company,
                     I refreshed the whole website's look making it look more modern and user-friendly.
                     I also added a SMS confirmation feature to the order system using Twilio.
+                    Below is another video showcasing the updated look of the site.
                   `}
               </p>
+
+              <div>
+                <video width="320" height="240" controls preload="none">
+                  <source src="videos/krj_preview01.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
 
               <p>
                 The site was first hosted on AWS Elastic Container Service where
