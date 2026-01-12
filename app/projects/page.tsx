@@ -147,9 +147,9 @@ export default function ProjectsPage() {
                     responsiveness. Used Bootstrap and SCSS pre-processor.
                   </p>
                   <div className="wrapper-showcase-button">
-                    <Button disabled>
+                    <Button>
                       <Link
-                        href="projects/krj-admin-(2025)"
+                        href="projects/fictional-iptv-website-(2024)"
                         style={{ color: "white" }}
                       >
                         Read more about this project
