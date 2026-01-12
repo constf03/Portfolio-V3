@@ -177,9 +177,9 @@ export default function ProjectsPage() {
                     I made on a mobile app development course in 2024.
                   </p>
                   <div className="wrapper-showcase-button">
-                    <Button disabled>
+                    <Button>
                       <Link
-                        href="projects/krj-admin-(2025)"
+                        href="projects/react-native-mobile-apps-(2024)"
                         style={{ color: "white" }}
                       >
                         Read more about this project

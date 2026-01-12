@@ -25,7 +25,7 @@ export default function Page() {
             />
             <article style={{ padding: "14px" }}>
               <h2>Job Offer Letter Creation App (2025)</h2>
-              <p>Last updated: Jan. 10, 2026</p>
+              <p>Last updated: Jan. 12, 2026</p>
 
               <p>
                 This app was made in Microsoft Power Apps. Riihisoft Oy gave me
