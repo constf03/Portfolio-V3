@@ -36,6 +36,35 @@ export default function Page() {
               </p>
 
               <p>
+                The Power App uses an Azure-hosted PostgreSQL database as the
+                main datasource.
+              </p>
+
+              <p>
+                {`
+                    During my thesis I couldn't fully complete the app and it is not publicly available.
+                    It is mainly a prototype/demo implementation of what can be achieved using low-code tools.
+                  `}
+              </p>
+
+              <p>Future development ideas:</p>
+              <ul>
+                <li>
+                  PDF export feature for created offer letter objects (Azure
+                  Blob Storage)
+                </li>
+                <li>
+                  AI integration for offer letter content generation (Azure
+                  OpenAI)
+                </li>
+                <li>Translations using Azure Translator API</li>
+                <li>
+                  General fixes and improvements to UI (form validation, more
+                  user-friendly inputs etc.)
+                </li>
+              </ul>
+
+              <p>
                 {`
                     This project was featured in my bachelor's thesis
                     "Mobile application development using a low-code platform" (2025).
