@@ -37,7 +37,14 @@ export default function Page() {
 
               <p>
                 Link to the website:{" "}
-                <a href="https://ravintolajohnny.fi" target="blank">
+                <a
+                  href="https://ravintolajohnny.fi"
+                  target="blank"
+                  style={{
+                    backgroundColor: "rgba(255, 255, 255, 0.8)",
+                    padding: "2px",
+                  }}
+                >
                   ravintolajohnny.fi
                 </a>
               </p>
