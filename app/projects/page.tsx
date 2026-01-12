@@ -209,9 +209,9 @@ export default function ProjectsPage() {
                     full stack implementation.
                   </p>
                   <div className="wrapper-showcase-button">
-                    <Button disabled>
+                    <Button>
                       <Link
-                        href="projects/krj-admin-(2025)"
+                        href="projects/full-stack-game-meteorite-destroyers-(2023)"
                         style={{ color: "white" }}
                       >
                         Read more about this project
