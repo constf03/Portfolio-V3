@@ -50,7 +50,7 @@ export default function Page() {
                   height={1}
                   src={Image01}
                   layout="responsive"
-                  alt="krj admin preview"
+                  alt="MoviesApp preview"
                   loading="lazy"
                   placeholder="blur"
                 />
@@ -76,7 +76,7 @@ export default function Page() {
                   height={1}
                   src={Image02}
                   layout="responsive"
-                  alt="krj admin preview"
+                  alt="MyPlacesApp preview"
                   loading="lazy"
                   placeholder="blur"
                 />
@@ -89,7 +89,7 @@ export default function Page() {
                   height={1}
                   src={Image03}
                   layout="responsive"
-                  alt="krj admin preview"
+                  alt="WeatherApp preview"
                   loading="lazy"
                   placeholder="blur"
                 />
@@ -103,7 +103,7 @@ export default function Page() {
                   height={1}
                   src={Image04}
                   layout="responsive"
-                  alt="krj admin preview"
+                  alt="ShoppingListApp preview"
                   loading="lazy"
                   placeholder="blur"
                 />
