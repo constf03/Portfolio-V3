@@ -147,7 +147,14 @@ export default function ProjectsPage() {
                     responsiveness. Used Bootstrap and SCSS pre-processor.
                   </p>
                   <div className="wrapper-showcase-button">
-                    <Button>Read more about this project</Button>
+                    <Button>
+                      <Link
+                        href="projects/fictional-iptv-website-(2024)"
+                        style={{ color: "white" }}
+                      >
+                        Read more about this project
+                      </Link>
+                    </Button>
                   </div>
                 </div>
 
@@ -170,13 +177,20 @@ export default function ProjectsPage() {
                     I made on a mobile app development course in 2024.
                   </p>
                   <div className="wrapper-showcase-button">
-                    <Button>Read more about this project</Button>
+                    <Button>
+                      <Link
+                        href="projects/react-native-mobile-apps-(2024)"
+                        style={{ color: "white" }}
+                      >
+                        Read more about this project
+                      </Link>
+                    </Button>
                   </div>
                 </div>
 
                 <div className="container-showcase-item">
                   <h4 className="h5">
-                    {"Full stack game: 'Meteorite destroyers' (2023)"}
+                    {`Full stack game: "Meteorite destroyers" (2023)`}
                   </h4>
                   <span>Topic: full stack web development</span>
                   <div className="mt-2">
@@ -195,7 +209,14 @@ export default function ProjectsPage() {
                     full stack implementation.
                   </p>
                   <div className="wrapper-showcase-button">
-                    <Button>Read more about this project</Button>
+                    <Button>
+                      <Link
+                        href="projects/full-stack-game-meteorite-destroyers-(2023)"
+                        style={{ color: "white" }}
+                      >
+                        Read more about this project
+                      </Link>
+                    </Button>
                   </div>
                 </div>
               </section>

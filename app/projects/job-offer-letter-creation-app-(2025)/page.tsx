@@ -25,7 +25,7 @@ export default function Page() {
             />
             <article style={{ padding: "14px" }}>
               <h2>Job Offer Letter Creation App (2025)</h2>
-              <p>Last updated: Jan. 10, 2026</p>
+              <p>Last updated: Jan. 12, 2026</p>
 
               <p>
                 This app was made in Microsoft Power Apps. Riihisoft Oy gave me
@@ -34,6 +34,35 @@ export default function Page() {
                 streamlining recruitment-related processes such as job offer
                 letter creation.
               </p>
+
+              <p>
+                The Power App uses an Azure-hosted PostgreSQL database as the
+                main datasource.
+              </p>
+
+              <p>
+                {`
+                    During my thesis I couldn't fully complete the app and it is not publicly available.
+                    It is mainly a prototype/demo implementation of what can be achieved using low-code tools.
+                  `}
+              </p>
+
+              <p>Future development ideas:</p>
+              <ul>
+                <li>
+                  PDF export feature for created offer letter objects (Azure
+                  Blob Storage)
+                </li>
+                <li>
+                  AI integration for offer letter content generation (Azure
+                  OpenAI)
+                </li>
+                <li>Translations using Azure Translator API</li>
+                <li>
+                  General fixes and improvements to UI (form validation, more
+                  user-friendly inputs etc.)
+                </li>
+              </ul>
 
               <p>
                 {`

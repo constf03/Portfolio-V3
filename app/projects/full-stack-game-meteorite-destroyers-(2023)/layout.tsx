@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KRJ Admin (2025) - Stefano Confalone Sofware Development Portfolio",
+  title: `Full Stack Game: "Meteorite Destroyers" (2023) - Stefano Confalone Sofware Development Portfolio`,
   description: "Software development portfolio projects showcase page.",
 };
 
