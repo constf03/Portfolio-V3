@@ -6,6 +6,7 @@ import Content from "@/components/Content/Content";
 import Footer from "@/components/Footer/Footer";
 import Nav from "@/components/Nav/Nav";
 import Image from "next/image";
+import Image00 from "@/public/images/placeholder.png";
 import Image01 from "@/public/images/krj_website_preview.jpg";
 import Image02 from "@/public/images/offerletterapp_preview.png";
 import Image03 from "@/public/images/game_preview.png";
@@ -212,6 +213,36 @@ export default function ProjectsPage() {
                     <Button>
                       <Link
                         href="projects/full-stack-game-meteorite-destroyers-(2023)"
+                        style={{ color: "white" }}
+                      >
+                        Read more about this project
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="container-showcase-item">
+                  <h4 className="h5">Software Design Projects</h4>
+                  <span>Topic: Figma Software Design</span>
+                  <div className="mt-2">
+                    <Image
+                      src={Image00}
+                      width={1}
+                      height={1}
+                      layout="responsive"
+                      alt="software design projects preview"
+                      loading="lazy"
+                      placeholder="blur"
+                    />
+                  </div>
+                  <p>
+                    These are some of my software design projects that I have
+                    done with Figma.
+                  </p>
+                  <div className="wrapper-showcase-button">
+                    <Button>
+                      <Link
+                        href="projects/software-design-projects"
                         style={{ color: "white" }}
                       >
                         Read more about this project
