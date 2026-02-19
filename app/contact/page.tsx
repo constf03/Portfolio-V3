@@ -28,8 +28,25 @@ export default function ContactPage() {
                 }}
               >
                 <h3 className="h3">Contact Information</h3>
+                <hr></hr>
                 <span>Email: stefano.confalone03@gmail.com</span>
                 <span>Phone: +358 45 324 3803</span>
+                <span>
+                  LinkedIn:{" "}
+                  <a
+                    href="https://www.linkedin.com/in/stefano-confalone-a0ba352a7/"
+                    target="blank"
+                  >
+                    https://www.linkedin.com/in/stefano-confalone-a0ba352a7/
+                  </a>
+                </span>
+                <span>
+                  GitHub:{" "}
+                  <a href="https://github.com/constf03" target="blank">
+                    https://github.com/constf03
+                  </a>
+                </span>
+                <hr></hr>
               </div>
             </section>
           </Content>

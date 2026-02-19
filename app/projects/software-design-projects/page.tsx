@@ -38,7 +38,7 @@ export default function Page() {
               <p>
                 {`
                   This is a software prototype of a fictional VPN desktop application
-                  for Windows I named TheAgent++. I created this on an advanced software project course
+                  I named TheAgent++. I created this on an advanced software project course
                   in Spring 2025 and presented it to others students.
                   This might be too detailed for what was meant to be a prototype,
                   but nonetheless it was fun to do and it taught me how to use Figma's more advanced features.
