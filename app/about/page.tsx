@@ -1,8 +1,11 @@
 "use client";
+import Image from "next/image";
 import Banner from "@/components/Banner/Banner";
 import BreadcrumbBar from "@/components/BreadcrumbBar/BreadcrumbBar";
 import Content from "@/components/Content/Content";
 import Footer from "@/components/Footer/Footer";
+import Image01 from "@/public/images/certificate_aws01.png";
+import Image02 from "@/public/images/certificate_tietosuoja_ABC.jpg";
 import Nav from "@/components/Nav/Nav";
 import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
 
@@ -101,6 +104,41 @@ export default function AboutPage() {
                   Certifications
                 </h3>
                 <hr></hr>
+                <div className="list-certifications">
+                  <div className={"container-cert"}>
+                    <div className="container-cert-img">
+                      <Image
+                        src={Image02}
+                        width={1}
+                        height={1}
+                        layout="responsive"
+                        alt="certificate preview"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="container-cert-label">
+                      <span>Tietosuojan ABC julkishallinnon henkilöstölle</span>
+                      <span>eOppiva, January 2024</span>
+                    </div>
+                  </div>
+
+                  <div className={"container-cert"}>
+                    <div className="container-cert-img">
+                      <Image
+                        src={Image01}
+                        width={1}
+                        height={1}
+                        layout="responsive"
+                        alt="certificate preview"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="container-cert-label">
+                      <span>AWS Educate Getting Started with Storage</span>
+                      <span>Amazon Web Services (AWS), October 2023</span>
+                    </div>
+                  </div>
+                </div>
                 <hr></hr>
               </section>
               {/*CERTIFICATIONS SECTION END*/}

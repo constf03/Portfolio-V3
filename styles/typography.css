@@ -1,3 +1,8 @@
+:root {
+  --text-outlined-white:
+    -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 .container-work-expr {
   display: flex;
   flex-direction: column;
@@ -10,6 +15,7 @@
   border-bottom-left-radius: 60px;
   border: 1px solid gray;
   backdrop-filter: blur(2px);
+  text-shadow: var(--text-outlined-white);
 }
 
 .container-work-expr span {
@@ -26,6 +32,7 @@
   background-image: url("../public/images/glass_overlay02.png");
   border: 1px solid gray;
   backdrop-filter: blur(2px);
+  text-shadow: var(--text-outlined-white);
 }
 
 .container-edu:hover,
@@ -91,4 +98,56 @@
 
 .wrapper-showcase-button Button {
   width: 100%;
+}
+
+.list-certifications {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  row-gap: 24px;
+  column-gap: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+  .list-certifications {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: start;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .list-certifications {
+    grid-template-columns: 30% 30% 30%;
+  }
+}
+
+.container-cert {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6px;
+  border-radius: 6px;
+  backdrop-filter: blur(2px);
+  background-image: url("../public/images/glass_overlay02.png");
+  background-color: var(--container-white);
+  background-position: center;
+  text-shadow: var(--text-outlined-white);
+}
+
+.container-cert-img {
+  max-width: 256px;
+}
+
+.container-cert-label {
+  display: flex;
+  width: 100%;
+  padding: 6px;
+  flex-direction: column;
+  text-align: center;
 }
