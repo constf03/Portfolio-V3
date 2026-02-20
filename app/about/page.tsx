@@ -18,8 +18,34 @@ export default function AboutPage() {
           <Content>
             <BreadcrumbBar text="/ About" />
             <section style={{ marginBottom: "100px", padding: "8px" }}>
-              <section style={{ margin: "8px" }}>
-                <h3 className="h3">IT Work Experience</h3>
+              {/*WHOAMI SECTION START*/}
+              <section>
+                <h3 className="h3">What Kind of Developer Am I?</h3>
+                <hr></hr>
+                <hr></hr>
+              </section>
+              {/*WHOAMI SECTION END*/}
+
+              {/*LANGUAGES SECTION START*/}
+              <section>
+                <h3 className="h3">Languages</h3>
+                <hr></hr>
+                <div
+                  style={{ display: "flex", flexDirection: "column", gap: 4 }}
+                >
+                  <span>Finnish - native</span>
+                  <span>English - professional working profiency</span>
+                  <span>Italian - native</span>
+                </div>
+                <hr></hr>
+              </section>
+              {/*LANGUAGES SECTION END*/}
+
+              {/*IT WORK EXPERIENCE SECTION START*/}
+              <section>
+                <h3 className="h3" style={{ marginTop: "46px" }}>
+                  IT Work Experience
+                </h3>
                 <hr></hr>
                 <div className="container-work-expr">
                   <h5>
@@ -43,6 +69,11 @@ export default function AboutPage() {
                   <span>Full stack web development</span>
                 </div>
                 <hr></hr>
+              </section>
+              {/*IT WORK EXPERIENCE SECTION END*/}
+
+              {/*EDUCATION SECTION START*/}
+              <section>
                 <h3 className="h3" style={{ marginTop: "46px" }}>
                   Education
                 </h3>
@@ -62,6 +93,17 @@ export default function AboutPage() {
                 </div>
                 <hr></hr>
               </section>
+              {/*EDUCATION SECTION END*/}
+
+              {/*CERTIFICATIONS SECTION START*/}
+              <section>
+                <h3 className="h3" style={{ marginTop: "46px" }}>
+                  Certifications
+                </h3>
+                <hr></hr>
+                <hr></hr>
+              </section>
+              {/*CERTIFICATIONS SECTION END*/}
             </section>
           </Content>
           <Footer />
