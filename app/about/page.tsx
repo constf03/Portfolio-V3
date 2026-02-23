@@ -25,6 +25,21 @@ export default function AboutPage() {
               <section>
                 <h3 className="h3">What Kind of Developer Am I?</h3>
                 <hr></hr>
+                <p>
+                  {`
+                      I am a software developer who is passionate about everything
+                      technology-related.
+                      My main area of expertise is full stack web development, but
+                      I can also do mobile and low-code-development and many other things.
+                      I'm always looking to learn more and improve my coding skills.
+                      I always try to write clean, consistent and
+                      understandable code for better project maintenance.
+                      Practice, working on projects and receiving constructive feedback in Git pull request reviews
+                      have been important factors in my software development learning progress.
+                      I hope I can continue to grow in my field and possibly share my knowledge and skills
+                      with others in the future!
+                    `}
+                </p>
                 <hr></hr>
               </section>
               {/*WHOAMI SECTION END*/}
