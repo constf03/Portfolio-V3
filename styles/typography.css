@@ -9,13 +9,12 @@
   margin: 6px;
   margin-top: 16px;
   padding: 6px;
-  background-color: rgba(0, 255, 174, 0.6);
+  background-color: orange;
   background-image: url("../public/images/glass_overlay02.png");
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
-  border: 1px solid gray;
+  border: 2px solid rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
-  text-shadow: var(--text-outlined-white);
 }
 
 .container-work-expr span {
@@ -30,15 +29,15 @@
   padding: 6px;
   background-color: rgba(0, 255, 242, 0.2);
   background-image: url("../public/images/glass_overlay02.png");
-  border: 1px solid gray;
+  border: 2px solid rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
-  text-shadow: var(--text-outlined-white);
 }
 
 .container-edu:hover,
 .container-work-expr:hover,
-.container-showcase-item:hover {
-  transform: scale(102%);
+.container-showcase-item:hover,
+.container-cert:hover {
+  transform: scale(101%);
   transition: 200ms;
   box-shadow: 0px 0px 15px 0px black;
 }
@@ -136,8 +135,8 @@
   backdrop-filter: blur(2px);
   background-image: url("../public/images/glass_overlay02.png");
   background-color: var(--container-white);
+  border: 2px solid rgba(0, 0, 0, 0.5);
   background-position: center;
-  text-shadow: var(--text-outlined-white);
 }
 
 .container-cert-img {
