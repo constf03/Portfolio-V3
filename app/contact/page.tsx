@@ -27,7 +27,7 @@ export default function ContactPage() {
                   padding: "8px",
                 }}
               >
-                <h3 className="h3">Contact Information</h3>
+                <h3 className="h3">Contact Info & Links</h3>
                 <hr></hr>
                 <span>Email: stefano.confalone03@gmail.com</span>
                 <span>Phone: +358 45 324 3803</span>
