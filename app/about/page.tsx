@@ -1,8 +1,11 @@
 "use client";
+import Image from "next/image";
 import Banner from "@/components/Banner/Banner";
 import BreadcrumbBar from "@/components/BreadcrumbBar/BreadcrumbBar";
 import Content from "@/components/Content/Content";
 import Footer from "@/components/Footer/Footer";
+import Image01 from "@/public/images/certificate_aws01.png";
+import Image02 from "@/public/images/certificate_tietosuoja_ABC.jpg";
 import Nav from "@/components/Nav/Nav";
 import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
 
@@ -18,8 +21,49 @@ export default function AboutPage() {
           <Content>
             <BreadcrumbBar text="/ About" />
             <section style={{ marginBottom: "100px", padding: "8px" }}>
-              <section style={{ margin: "8px" }}>
-                <h3 className="h3">IT Work Experience</h3>
+              {/*WHOAMI SECTION START*/}
+              <section>
+                <h3 className="h3">What Kind of Developer Am I?</h3>
+                <hr></hr>
+                <p>
+                  {`
+                      I am a software developer who is passionate about everything
+                      technology-related.
+                      My main area of expertise is full stack web development, but
+                      I can also do mobile and low-code-development and many other things.
+                      I'm always looking to learn more and improve my coding skills.
+                      I always try to write clean, consistent and
+                      understandable code for better project maintenance.
+                      Practice, working on projects and receiving constructive feedback in Git pull request reviews
+                      have been important factors in my software development learning progress.
+                      I hope I can continue to grow in my field and possibly share my knowledge and skills
+                      with others in the future!
+                    `}
+                </p>
+                <hr></hr>
+              </section>
+              {/*WHOAMI SECTION END*/}
+
+              {/*LANGUAGES SECTION START*/}
+              <section>
+                <h3 className="h3">Languages</h3>
+                <hr></hr>
+                <div
+                  style={{ display: "flex", flexDirection: "column", gap: 4 }}
+                >
+                  <span>Finnish - native</span>
+                  <span>English - professional working profiency</span>
+                  <span>Italian - native</span>
+                </div>
+                <hr></hr>
+              </section>
+              {/*LANGUAGES SECTION END*/}
+
+              {/*IT WORK EXPERIENCE SECTION START*/}
+              <section>
+                <h3 className="h3" style={{ marginTop: "46px" }}>
+                  IT Work Experience
+                </h3>
                 <hr></hr>
                 <div className="container-work-expr">
                   <h5>
@@ -43,6 +87,11 @@ export default function AboutPage() {
                   <span>Full stack web development</span>
                 </div>
                 <hr></hr>
+              </section>
+              {/*IT WORK EXPERIENCE SECTION END*/}
+
+              {/*EDUCATION SECTION START*/}
+              <section>
                 <h3 className="h3" style={{ marginTop: "46px" }}>
                   Education
                 </h3>
@@ -62,6 +111,52 @@ export default function AboutPage() {
                 </div>
                 <hr></hr>
               </section>
+              {/*EDUCATION SECTION END*/}
+
+              {/*CERTIFICATIONS SECTION START*/}
+              <section>
+                <h3 className="h3" style={{ marginTop: "46px" }}>
+                  Certifications
+                </h3>
+                <hr></hr>
+                <div className="list-certifications">
+                  <div className={"container-cert"}>
+                    <div className="container-cert-img">
+                      <Image
+                        src={Image02}
+                        width={1}
+                        height={1}
+                        layout="responsive"
+                        alt="certificate preview"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="container-cert-label">
+                      <span>Tietosuojan ABC julkishallinnon henkilöstölle</span>
+                      <span>eOppiva, January 2024</span>
+                    </div>
+                  </div>
+
+                  <div className={"container-cert"}>
+                    <div className="container-cert-img">
+                      <Image
+                        src={Image01}
+                        width={1}
+                        height={1}
+                        layout="responsive"
+                        alt="certificate preview"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="container-cert-label">
+                      <span>AWS Educate Getting Started with Storage</span>
+                      <span>Amazon Web Services (AWS), October 2023</span>
+                    </div>
+                  </div>
+                </div>
+                <hr></hr>
+              </section>
+              {/*CERTIFICATIONS SECTION END*/}
             </section>
           </Content>
           <Footer />

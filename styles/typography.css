@@ -1,0 +1,152 @@
+:root {
+  --text-outlined-white:
+    -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.container-work-expr {
+  display: flex;
+  flex-direction: column;
+  margin: 6px;
+  margin-top: 16px;
+  padding: 6px;
+  background-color: orange;
+  background-image: url("../public/images/glass_overlay02.png");
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.container-work-expr span {
+  padding-left: 42px;
+}
+
+.container-edu {
+  display: flex;
+  flex-direction: column;
+  margin: 6px;
+  margin-top: 16px;
+  padding: 6px;
+  background-color: rgba(0, 255, 242, 0.2);
+  background-image: url("../public/images/glass_overlay02.png");
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.container-edu:hover,
+.container-work-expr:hover,
+.container-showcase-item:hover,
+.container-cert:hover {
+  transform: scale(101%);
+  transition: 200ms;
+  box-shadow: 0px 0px 15px 0px black;
+}
+
+.container-showcase {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  row-gap: 24px;
+  column-gap: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+  .container-showcase {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: start;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .container-showcase {
+    grid-template-columns: 30% 30% 30%;
+  }
+}
+
+.container-showcase-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  backdrop-filter: blur(2px);
+  background-color: var(--container-white);
+}
+
+.container-showcase-item p {
+  margin: 2px;
+  text-justify: inter-word;
+}
+
+.container-showcase-item h4 {
+  font-weight: bold;
+}
+
+.wrapper-showcase-button {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  margin-top: 16px;
+}
+
+.wrapper-showcase-button Button {
+  width: 100%;
+}
+
+.list-certifications {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  row-gap: 24px;
+  column-gap: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+  .list-certifications {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: start;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .list-certifications {
+    grid-template-columns: 30% 30% 30%;
+  }
+}
+
+.container-cert {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6px;
+  border-radius: 6px;
+  backdrop-filter: blur(2px);
+  background-image: url("../public/images/glass_overlay02.png");
+  background-color: var(--container-white);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+
+.container-cert-img {
+  max-width: 256px;
+}
+
+.container-cert-label {
+  display: flex;
+  width: 100%;
+  padding: 6px;
+  flex-direction: column;
+  text-align: center;
+}
