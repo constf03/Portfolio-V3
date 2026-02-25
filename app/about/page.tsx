@@ -29,15 +29,18 @@ export default function AboutPage() {
                   {`
                       I am a software developer who is passionate about everything
                       technology-related.
-                      My main area of expertise is full stack web development, but
-                      I can also do mobile and low-code-development and many other things.
-                      I'm always looking to learn more and improve my coding skills.
-                      I always try to write clean, consistent and
-                      understandable code for better project maintenance.
-                      Practice, working on projects and receiving constructive feedback in Git pull request reviews
-                      have been important factors in my software development learning progress.
-                      I hope I can continue to grow in my field and possibly share my knowledge and skills
-                      with others in the future!
+                      While my core expertise lies within full stack web development,
+                      I am also proficient in mobile development, low-code development
+                      and many other things.
+                      I'm always looking to learn more to expand and improve my coding and
+                      developer thinking skills.
+                      I am focused to write clean, consistent and understandable code for
+                      better project management.
+                      Practice, working on various projects and receiving constructive
+                      feedback in Git pull request reviews have been important factors in my
+                      software development learning progress.
+                      My scope is to continue to grow in my field and possibly share my
+                      knowledge and skills with others in the future!
                     `}
                 </p>
                 <hr></hr>

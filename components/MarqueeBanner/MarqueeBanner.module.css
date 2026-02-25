@@ -1,7 +1,8 @@
-.marquee_container {
+.container_marquee {
   background: var(--marquee-bg);
   height: 30px;
   color: white;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
