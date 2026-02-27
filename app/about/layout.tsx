@@ -1,18 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "bootstrap/dist/css/bootstrap.css";
-import "@/styles/colors.css";
-import "@/styles/globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "About Me - Stefano Confalone Sofware Development Portfolio",
@@ -22,11 +9,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
-  return (
-    <div className={`${geistSans.variable} ${geistMono.variable}`}>
-      {children}
-    </div>
-  );
+  return <div>{children}</div>;
 }
