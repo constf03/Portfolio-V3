@@ -101,14 +101,18 @@ export default function AboutPage() {
                 <hr></hr>
                 <div className="container-edu">
                   <h5>
-                    Bachelor of Engineering, Information and Communication
-                    Technology
+                    <b>
+                      Bachelor of Engineering, Information and Communication
+                      Technology
+                    </b>
                   </h5>
                   <span>Jyväskylä University of Applied Sciences</span>
                   <span>August 2022 - December 2025</span>
                 </div>
                 <div className="container-edu">
-                  <h5>Matriculation Examination / High School</h5>
+                  <h5>
+                    <b>Matriculation Examination / High School</b>
+                  </h5>
                   <span>Riihimäen lukio</span>
                   <span>August 2019 - June 2022</span>
                 </div>
@@ -135,7 +139,9 @@ export default function AboutPage() {
                       />
                     </div>
                     <div className="container-cert-label">
-                      <span>Tietosuojan ABC julkishallinnon henkilöstölle</span>
+                      <span>
+                        <b>Tietosuojan ABC julkishallinnon henkilöstölle</b>
+                      </span>
                       <span>eOppiva, January 2024</span>
                     </div>
                   </div>
@@ -152,7 +158,9 @@ export default function AboutPage() {
                       />
                     </div>
                     <div className="container-cert-label">
-                      <span>AWS Educate Getting Started with Storage</span>
+                      <span>
+                        <b>AWS Educate Getting Started with Storage</b>
+                      </span>
                       <span>Amazon Web Services (AWS), October 2023</span>
                     </div>
                   </div>
