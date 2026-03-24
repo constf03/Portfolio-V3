@@ -24,15 +24,31 @@ export default function HomePage() {
                 <p>
                   This is my personal portfolio website I created using NextJS.
                 </p>
+
                 <p>
                   I graduated Jyväskylä University of Applied Sciences (Jamk) in
                   Finland in December 2025 with a Bachelor of Engineering degree
                   in information and communication technology.
                 </p>
+
                 <p>
                   On this website you can find showcases of my software
                   development-related projects and information about my
-                  competences.
+                  competences. <b>Check out the Projects tab!</b>
+                </p>
+
+                <p>
+                  {`
+                      📌If you're interested in seeing how I write Typescript JSX code, you can find the
+                      source code of this website here: 
+                    `}
+                  <a
+                    href="https://github.com/constf03/Portfolio-V3/tree/main"
+                    target="blank"
+                  >
+                    https://github.com/constf03/Portfolio-V3/tree/main
+                  </a>
+                  .
                 </p>
               </article>
               {/*

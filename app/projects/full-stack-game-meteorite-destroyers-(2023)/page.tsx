@@ -25,21 +25,30 @@ export default function Page() {
             />
             <article style={{ padding: "14px" }}>
               <h2>{`Full Stack Game: "Meteorite Destroyers" (2023)`}</h2>
-              <p>Last updated: Jan. 12, 2026</p>
+              <p>Last updated: Mar. 24, 2026</p>
 
               <p>
-                This is my first full stack application. I developed this small
-                game as a final project on a full stack programming course in
-                Fall 2023. In the game you play as a ship and the objective is
-                to destroy as many falling meteorites as possible. The player
-                has 5 lives and once they run out the game ends. If the player
-                has reached a personal record highscore it is saved to a
-                database.
+                I developed this small game as a final project on a full stack
+                programming course in Fall 2023. In the game you play as a ship
+                and the objective is to destroy as many falling meteorites as
+                possible by shooting rockets. The player has 5 lives and once
+                they run out the game ends. If the player has reached a personal
+                record highscore it is saved to a database.
+              </p>
+
+              <p>
+                {`
+                    To be fair this full stack Phaser.js game project wasn't anything
+                    extraordinary because it was just a beginner project.😅
+                  `}
               </p>
 
               <p>
                 Technologies used:{" "}
-                <b>JavaScript, Phaser, NodeJS, Express, RestAPI, MongoDB</b>
+                <b>
+                  JavaScript, Phaser.js, Node.js, Express, RestAPI, MongoDB,
+                  Mongoose
+                </b>
               </p>
 
               <p>
@@ -47,10 +56,6 @@ export default function Page() {
                 <a
                   href="https://github.com/constf03/Meteorite-Destroyers-Game"
                   target="blank"
-                  style={{
-                    backgroundColor: "rgba(255, 255, 255, 0.8)",
-                    padding: "2px",
-                  }}
                 >
                   github.com/constf03/Meteorite-Destroyers-Game
                 </a>
