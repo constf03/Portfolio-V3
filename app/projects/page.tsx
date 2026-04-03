@@ -1,11 +1,9 @@
 "use client";
 import Banner from "@/components/Banner/Banner";
 import BreadcrumbBar from "@/components/BreadcrumbBar/BreadcrumbBar";
-import { Button } from "react-bootstrap";
 import Content from "@/components/Content/Content";
 import Footer from "@/components/Footer/Footer";
 import Nav from "@/components/Nav/Nav";
-import Image from "next/image";
 import Image00 from "@/public/images/placeholder.png";
 import Image01 from "@/public/images/krj_website_preview.jpg";
 import Image02 from "@/public/images/offerletterapp_preview.png";
@@ -13,7 +11,7 @@ import Image03 from "@/public/images/game_preview.png";
 import Image04 from "@/public/images/krj-admin-preview.png";
 import Image05 from "@/public/images/iptv_preview.png";
 import Image06 from "@/public/images/mobile_apps_preview.png";
-import Link from "next/link";
+import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
 
 export default function ProjectsPage() {
@@ -28,230 +26,90 @@ export default function ProjectsPage() {
           <Content>
             <BreadcrumbBar text="/ Projects" />
             <section style={{ marginBottom: "100px", padding: "8px" }}>
-              <h1 className="h1">Projects Showcase</h1>
-              <hr></hr>
+              <article>
+                <h1>Projects Showcase</h1>
+                <p>
+                  Here you can find my showcased projects. Each have a link to
+                  an article showcasing the respective project. Not all of them
+                  are open source.
+                </p>
+              </article>
+
               <section className="container-showcase">
-                <div className="container-showcase-item">
-                  <h4 className="h5">Website For a Restaurant (2024-2025)</h4>
-                  <span>Topic: full stack web development</span>
-                  <div className="mt-2">
-                    <Image
-                      src={Image01}
-                      width={1}
-                      height={1}
-                      layout="responsive"
-                      alt="restaurant website project preview"
-                      loading="lazy"
-                      placeholder="blur"
-                    />
-                  </div>
-                  <p>
-                    I created and updated the website of oriental restaurant
+                <ProjectCard
+                  title="Website For a Restaurant (2024-2025)"
+                  topic="full stack web development"
+                  imgSrc={Image01}
+                  imgAltText="restaurant website project thumbnail"
+                  description="I created and updated the website of oriental restaurant
                     Ravintola Johnny Hong Kong Hyvinkää in my 2024 and 2025
-                    internship.
-                  </p>
-                  <div className="wrapper-showcase-button">
-                    <Button>
-                      <Link
-                        href="projects/website-for-a-restaurant-(2024-2025)"
-                        style={{ color: "white" }}
-                      >
-                        Read more about this project
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
+                    internship."
+                  href="projects/website-for-a-restaurant-(2024-2025)"
+                />
 
-                <div className="container-showcase-item">
-                  <h4 className="h5">Job Offer Letter Creation App (2025)</h4>
-                  <span>Topic: low-code development</span>
-                  <div className="mt-2">
-                    <Image
-                      src={Image02}
-                      width={1}
-                      height={1}
-                      layout="responsive"
-                      alt="offer letter app preview"
-                      loading="lazy"
-                      placeholder="blur"
-                    />
-                  </div>
-                  <p>
-                    {`
-                        Developed in Power Apps Studio, this business application facilitates the creation of job offer letters.
-                        This project was part of my 2025 Bachelor's thesis.
-                      `}
-                  </p>
-                  <div className="wrapper-showcase-button">
-                    <Button>
-                      <Link
-                        href="projects/job-offer-letter-creation-app-(2025)"
-                        style={{ color: "white" }}
-                      >
-                        Read more about this project
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
+                <ProjectCard
+                  title="Job Offer Letter Creation App (2025)"
+                  topic="low-code app development"
+                  imgSrc={Image02}
+                  imgAltText="low-code offer letter app thumbnail"
+                  description="Developed in Power Apps Studio, this business application facilitates the creation of job offer letters.
+                        This project was part of my 2025 Bachelor's thesis."
+                  href="projects/job-offer-letter-creation-app-(2025)"
+                />
 
-                <div className="container-showcase-item">
-                  <h4 className="h5">KRJ Admin (2025)</h4>
-                  <span>Topic: mobile development</span>
-                  <div className="mt-2">
-                    <Image
-                      src={Image04}
-                      width={1}
-                      height={1}
-                      layout="responsive"
-                      alt="KRJ ADMIN preview"
-                      loading="lazy"
-                      placeholder="blur"
-                    />
-                  </div>
-                  <p>
-                    {`
-                        With React Native & Expo I created a mobile application for handling customer orders.
+                <ProjectCard
+                  title="KRJ Admin (2025)"
+                  topic="mobile application development"
+                  imgSrc={Image04}
+                  imgAltText="KRJ Admin mobile app project thumbnail"
+                  description="With React Native & Expo I created a mobile application for handling customer orders.
                         This project was part of my 2025 internship, and the software is meant to be
-                        private property of oriental restaurant Ravintola Johnny Hong Kong Hyvinkää.
-                      `}
-                  </p>
-                  <div className="wrapper-showcase-button">
-                    <Button>
-                      <Link
-                        href="projects/krj-admin-(2025)"
-                        style={{ color: "white" }}
-                      >
-                        Read more about this project
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
+                        private property of oriental restaurant Ravintola Johnny Hong Kong Hyvinkää."
+                  href="projects/krj-admin-(2025)"
+                />
 
-                <div className="container-showcase-item">
-                  <h4 className="h5">Fictional IPTV Website (2024)</h4>
-                  <span>Topic: web development & design</span>
-                  <div className="mt-2">
-                    <Image
-                      src={Image05}
-                      width={1}
-                      height={1}
-                      layout="responsive"
-                      alt="IPTV website preview"
-                      loading="lazy"
-                      placeholder="blur"
-                    />
-                  </div>
-                  <p>
-                    A fictional IPTV service website that I made on a web
-                    visualization course. It is a frontend-only implementation.
+                <ProjectCard
+                  title="Fictional IPTV Website (2024)"
+                  topic="frontend web development"
+                  imgSrc={Image05}
+                  imgAltText="Fictional IPTV website project thumbnail"
+                  description="A fictional IPTV service website that I made on a web
+                    visualization course in Fall 2024. It is a frontend-only implementation.
                     The main focus of the site is its visual outlook and
-                    responsiveness. Used Bootstrap and SCSS pre-processor.
-                  </p>
-                  <div className="wrapper-showcase-button">
-                    <Button>
-                      <Link
-                        href="projects/fictional-iptv-website-(2024)"
-                        style={{ color: "white" }}
-                      >
-                        Read more about this project
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
+                    responsiveness. Used Bootstrap and SCSS pre-processor."
+                  href="projects/fictional-iptv-website-(2024)"
+                />
 
-                <div className="container-showcase-item">
-                  <h4 className="h5">React Native Mobile Apps (2024)</h4>
-                  <span>Topic: mobile development</span>
-                  <div className="mt-2">
-                    <Image
-                      src={Image06}
-                      width={1}
-                      height={1}
-                      layout="responsive"
-                      alt="mobile apps preview"
-                      loading="lazy"
-                      placeholder="blur"
-                    />
-                  </div>
-                  <p>
-                    A collection of simple React Native mobile applications that
-                    I made on a mobile app development course in 2024.
-                  </p>
-                  <div className="wrapper-showcase-button">
-                    <Button>
-                      <Link
-                        href="projects/react-native-mobile-apps-(2024)"
-                        style={{ color: "white" }}
-                      >
-                        Read more about this project
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
+                <ProjectCard
+                  title="React Native Mobile Apps (2024)"
+                  topic="mobile application development"
+                  imgSrc={Image06}
+                  imgAltText="Mobile apps collection thumbnail"
+                  description="A collection of simple React Native mobile applications that
+                    I made on a mobile app development course in 2024."
+                  href="projects/react-native-mobile-apps-(2024)"
+                />
 
-                <div className="container-showcase-item">
-                  <h4 className="h5">
-                    {`Full stack game: "Meteorite destroyers" (2023)`}
-                  </h4>
-                  <span>Topic: full stack web development</span>
-                  <div className="mt-2">
-                    <Image
-                      src={Image03}
-                      width={1}
-                      height={1}
-                      layout="responsive"
-                      alt="meteorite destroyers preview"
-                      loading="lazy"
-                      placeholder="blur"
-                    />
-                  </div>
-                  <p>
-                    A game made using Phaser.js framework. This was my first
-                    full stack implementation.
-                  </p>
-                  <div className="wrapper-showcase-button">
-                    <Button>
-                      <Link
-                        href="projects/full-stack-game-meteorite-destroyers-(2023)"
-                        style={{ color: "white" }}
-                      >
-                        Read more about this project
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
+                <ProjectCard
+                  title={`Full stack game: "Meteorite destroyers" (2023)`}
+                  topic="full stack web development"
+                  imgSrc={Image03}
+                  imgAltText="Meteorite Destroyers project thumbnail"
+                  description="A game made using Phaser.js framework and it includes some CRUD functionality. This was my first
+                    full stack implementation."
+                  href="projects/full-stack-game-meteorite-destroyers-(2023)"
+                />
 
-                <div className="container-showcase-item">
-                  <h4 className="h5">Software Design Projects</h4>
-                  <span>Topic: Figma Software Design</span>
-                  <div className="mt-2">
-                    <Image
-                      src={Image00}
-                      width={1}
-                      height={1}
-                      layout="responsive"
-                      alt="software design projects preview"
-                      loading="lazy"
-                      placeholder="blur"
-                    />
-                  </div>
-                  <p>
-                    These are some of my software design projects that I have
-                    done with Figma.
-                  </p>
-                  <div className="wrapper-showcase-button">
-                    <Button>
-                      <Link
-                        href="projects/software-design-projects"
-                        style={{ color: "white" }}
-                      >
-                        Read more about this project
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
+                <ProjectCard
+                  title="Figma Software Design Projects"
+                  topic="software design"
+                  imgSrc={Image00}
+                  imgAltText="Figma Software Design projects thumbnail"
+                  description="These are some of my software design projects that I have
+                    done with Figma."
+                  href="projects/software-design-projects"
+                />
               </section>
-              <hr></hr>
             </section>
           </Content>
           <Footer />
