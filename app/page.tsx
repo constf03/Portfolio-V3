@@ -20,7 +20,10 @@ export default function HomePage() {
           <Content>
             <section style={{ padding: "8px" }}>
               <article>
-                <h2>Welcome! Tervetuloa! &#128075;</h2>
+                <h1 style={{ marginBottom: "12px" }}>
+                  Welcome! Tervetuloa! &#128075;
+                </h1>
+
                 <p>
                   This is my personal portfolio website I created using NextJS.
                 </p>
@@ -51,26 +54,6 @@ export default function HomePage() {
                   .
                 </p>
               </article>
-              {/*
-              <div>
-                <div
-                  style={{
-                    width: "100%",
-                    height: 24,
-                    marginTop: "50px",
-                    backgroundColor: "black",
-                  }}
-                ></div>
-                <Slideshow />
-                <div
-                  style={{
-                    width: "100%",
-                    height: 24,
-                    backgroundColor: "black",
-                  }}
-                ></div>
-              </div>
-              */}
             </section>
           </Content>
           <Footer />

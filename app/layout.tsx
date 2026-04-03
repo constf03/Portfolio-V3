@@ -7,7 +7,8 @@ import "@/styles/typography.css";
 
 export const metadata: Metadata = {
   title: "Home - Stefano Confalone Sofware Development Portfolio",
-  description: "Software development portfolio home page.",
+  description:
+    "This is Stefano Confalone's software development portfolio web site.",
 };
 
 export default function RootLayout({
@@ -16,8 +17,8 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en" className={lato.className}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className={lato.className}>{children}</body>
     </html>
   );
 }
