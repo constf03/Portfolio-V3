@@ -35,7 +35,6 @@
 
 .container-edu:hover,
 .container-work-expr:hover,
-.container-showcase-item:hover,
 .container-cert:hover {
   transform: scale(101%);
   transition: 200ms;
@@ -65,38 +64,6 @@
   .container-showcase {
     grid-template-columns: 30% 30% 30%;
   }
-}
-
-.container-showcase-item {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 100%;
-  height: 100%;
-  padding: 8px;
-  border-radius: 6px;
-  backdrop-filter: blur(2px);
-  background-color: var(--container-white);
-}
-
-.container-showcase-item p {
-  margin: 2px;
-  text-justify: inter-word;
-}
-
-.container-showcase-item h4 {
-  font-weight: bold;
-}
-
-.wrapper-showcase-button {
-  display: flex;
-  flex: 1;
-  align-items: flex-end;
-  margin-top: 16px;
-}
-
-.wrapper-showcase-button Button {
-  width: 100%;
 }
 
 .list-certifications {
