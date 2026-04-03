@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ReactNode } from "react";
+import { bebasNeue } from "@/utils/fonts";
 import Image01 from "@/public/images/con-stefano.jpg";
 import styles from "./Banner.module.css";
 
@@ -21,18 +22,21 @@ export default function Banner({ children }: BannerProps) {
             loading="lazy"
           />
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <h2 className={styles.name_tag}>
+            <h1 className={`${styles.name_tag} ${bebasNeue.className}`}>
               <b>Stefano Confalone</b>
-            </h2>
+            </h1>
+
             <span>
               <i>My Software Development Portfolio</i>
             </span>
+
             <span className={styles.education_tag} style={{ fontSize: "10px" }}>
               Bachelor of Engineering, Information and Communication Technology
               (Jamk 2025) &#127891;
             </span>
           </div>
         </div>
+
         <div className={styles.nav_wrapper}>{children}</div>
       </div>
     </div>

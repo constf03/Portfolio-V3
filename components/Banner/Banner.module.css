@@ -19,6 +19,10 @@
   flex-direction: row;
 }
 
+.name_tag {
+  font-size: 42px;
+}
+
 .portrait {
   border-radius: 30px;
   border: 2px solid orange;
