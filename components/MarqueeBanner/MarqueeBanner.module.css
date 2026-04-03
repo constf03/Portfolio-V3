@@ -1,5 +1,8 @@
 .container_marquee {
-  background: var(--marquee-bg);
+  background-image: url("../../public/images/vista.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 30px;
   color: white;
   font-weight: bold;
@@ -8,4 +11,6 @@
   justify-content: center;
   white-space: pre-wrap;
   font-size: large;
+  border-bottom: 2px solid black;
+  text-shadow: var(--text-outlined-white);
 }
