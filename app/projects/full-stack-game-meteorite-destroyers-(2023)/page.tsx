@@ -28,10 +28,10 @@ export default function Page() {
               <p>Last updated: Mar. 24, 2026</p>
 
               <p>
-                I developed this small game as a final project on a full stack
-                programming course in Fall 2023. In the game you play as a ship
-                and the objective is to destroy as many falling meteorites as
-                possible by shooting rockets. The player has 5 lives and once
+                I developed this small browser game as a final project on a full
+                stack programming course in Fall 2023. In the game you play as a
+                ship and the objective is to destroy as many falling meteorites
+                as possible by shooting rockets. The player has 5 lives and once
                 they run out the game ends. If the player has reached a personal
                 record highscore it is saved to a database.
               </p>
@@ -39,7 +39,7 @@ export default function Page() {
               <p>
                 {`
                     To be fair this full stack Phaser.js game project wasn't anything
-                    extraordinary because it was just a beginner project.😅
+                    extraordinary because it was just a beginner project with some CRUD features.😅
                   `}
               </p>
 
