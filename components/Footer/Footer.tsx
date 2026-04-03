@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { bebasNeue } from "@/utils/fonts";
 import Image01 from "../../public/images/LinkedIn_logo_initials.png";
 import Image02 from "../../public/images/github.png";
-import { bebasNeue } from "@/utils/fonts";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
