@@ -28,7 +28,7 @@ export default function ProjectCard({
 
       <span>Topic: {topic}</span>
 
-      <div className="mt-2">
+      <div>
         <Image
           src={imgSrc}
           width={1}
