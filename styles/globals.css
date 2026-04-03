@@ -10,6 +10,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 .bg-one {
   background-image: url("../public/images/frutiger_aero.jpeg");
   background-position: center;
