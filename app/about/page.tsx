@@ -1,11 +1,8 @@
 "use client";
-import Image from "next/image";
 import Banner from "@/components/Banner/Banner";
 import BreadcrumbBar from "@/components/BreadcrumbBar/BreadcrumbBar";
 import Content from "@/components/Content/Content";
 import Footer from "@/components/Footer/Footer";
-import Image01 from "@/public/images/certificate_aws01.png";
-import Image02 from "@/public/images/certificate_tietosuoja_ABC.jpg";
 import Nav from "@/components/Nav/Nav";
 import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
 
@@ -22,9 +19,10 @@ export default function AboutPage() {
             <BreadcrumbBar text="/ About" />
             <section style={{ marginBottom: "100px", padding: "8px" }}>
               {/*WHOAMI SECTION START*/}
-              <section>
-                <h3 className="h3">What Kind of Developer Am I?</h3>
-                <hr></hr>
+              <article>
+                <h2 style={{ marginBottom: "6px" }}>
+                  What Kind of Developer Am I?
+                </h2>
                 <p>
                   {`
                       I am a software developer who is passionate about everything
@@ -43,14 +41,12 @@ export default function AboutPage() {
                       knowledge and skills with others in the future!
                     `}
                 </p>
-                <hr></hr>
-              </section>
+              </article>
               {/*WHOAMI SECTION END*/}
 
               {/*LANGUAGES SECTION START*/}
               <section>
-                <h3 className="h3">Languages</h3>
-                <hr></hr>
+                <h2 style={{ marginBottom: "6px" }}>Languages</h2>
                 <div
                   style={{ display: "flex", flexDirection: "column", gap: 4 }}
                 >
@@ -58,116 +54,61 @@ export default function AboutPage() {
                   <span>English - professional working profiency</span>
                   <span>Italian - native</span>
                 </div>
-                <hr></hr>
               </section>
               {/*LANGUAGES SECTION END*/}
 
               {/*IT WORK EXPERIENCE SECTION START*/}
               <section>
-                <h3 className="h3" style={{ marginTop: "46px" }}>
-                  IT Work Experience
-                </h3>
-                <hr></hr>
+                <h2 style={{ marginTop: "46px" }}>IT Work Experience</h2>
                 <div className="container-work-expr">
-                  <h5>
+                  <h3>
                     <b>Thesis work (Riihisoft Oy)</b>
-                  </h5>
+                  </h3>
                   <span>June-December 2025</span>
                   <span>{"Bachelor's thesis work: Low-code development"}</span>
                 </div>
+
                 <div className="container-work-expr">
-                  <h5>
+                  <h3>
                     <b>Internship (Tmi J.J.Wessman)</b>
-                  </h5>
+                  </h3>
                   <span>April-August 2025</span>
                   <span>Full stack web and mobile development</span>
                 </div>
+
                 <div className="container-work-expr">
-                  <h5>
+                  <h3>
                     <b>Internship (Tmi J.J.Wessman)</b>
-                  </h5>
+                  </h3>
                   <span>May-August 2024</span>
                   <span>Full stack web development</span>
                 </div>
-                <hr></hr>
               </section>
               {/*IT WORK EXPERIENCE SECTION END*/}
 
               {/*EDUCATION SECTION START*/}
               <section>
-                <h3 className="h3" style={{ marginTop: "46px" }}>
-                  Education
-                </h3>
-                <hr></hr>
+                <h2 style={{ marginTop: "46px" }}>Education</h2>
                 <div className="container-edu">
-                  <h5>
+                  <h3>
                     <b>
                       Bachelor of Engineering, Information and Communication
                       Technology
                     </b>
-                  </h5>
+                  </h3>
                   <span>Jyväskylä University of Applied Sciences</span>
                   <span>August 2022 - December 2025</span>
                 </div>
+
                 <div className="container-edu">
-                  <h5>
+                  <h3>
                     <b>Matriculation Examination / High School</b>
-                  </h5>
+                  </h3>
                   <span>Riihimäen lukio</span>
                   <span>August 2019 - June 2022</span>
                 </div>
-                <hr></hr>
               </section>
               {/*EDUCATION SECTION END*/}
-
-              {/*CERTIFICATIONS SECTION START*/}
-              <section>
-                <h3 className="h3" style={{ marginTop: "46px" }}>
-                  Certifications
-                </h3>
-                <hr></hr>
-                <div className="list-certifications">
-                  <div className={"container-cert"}>
-                    <div className="container-cert-img">
-                      <Image
-                        src={Image02}
-                        width={1}
-                        height={1}
-                        layout="responsive"
-                        alt="certificate preview"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className="container-cert-label">
-                      <span>
-                        <b>Tietosuojan ABC julkishallinnon henkilöstölle</b>
-                      </span>
-                      <span>eOppiva, January 2024</span>
-                    </div>
-                  </div>
-
-                  <div className={"container-cert"}>
-                    <div className="container-cert-img">
-                      <Image
-                        src={Image01}
-                        width={1}
-                        height={1}
-                        layout="responsive"
-                        alt="certificate preview"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className="container-cert-label">
-                      <span>
-                        <b>AWS Educate Getting Started with Storage</b>
-                      </span>
-                      <span>Amazon Web Services (AWS), October 2023</span>
-                    </div>
-                  </div>
-                </div>
-                <hr></hr>
-              </section>
-              {/*CERTIFICATIONS SECTION END*/}
             </section>
           </Content>
           <Footer />
