@@ -5,6 +5,8 @@
   width: 100%;
   height: 100%;
   padding: 8px;
+  border: 1px solid white;
+  outline: 1px solid black;
   border-radius: 6px;
   backdrop-filter: blur(2px);
   background-color: var(--container-white);
@@ -32,7 +34,8 @@
   background: var(--location-bar-bg);
   padding: 6px;
   font-size: 16px;
-  border: none;
+  border: 2px solid white;
+  outline: 2px solid black;
   border-radius: 2px;
 }
 

@@ -28,11 +28,7 @@ export default function ProjectsPage() {
             <section style={{ marginBottom: "100px", padding: "8px" }}>
               <article>
                 <h1>Projects Showcase</h1>
-                <p>
-                  Here you can find my showcased projects. Each have a link to
-                  an article showcasing the respective project. Not all of them
-                  are open source.
-                </p>
+                <p>Here you can find links to my showcased projects.</p>
               </article>
 
               <section className="container-showcase">
