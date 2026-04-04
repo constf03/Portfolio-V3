@@ -24,7 +24,9 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className={styles.container_project_card}>
-      <h3>{title}</h3>
+      <h3>
+        <b>{title}</b>
+      </h3>
 
       <span>Topic: {topic}</span>
 
