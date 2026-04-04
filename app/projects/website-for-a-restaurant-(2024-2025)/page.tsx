@@ -25,10 +25,12 @@ export default function Page() {
               linkText="Back to projects page."
             />
             <article style={{ padding: "14px" }}>
-              <h2>Website For a Restaurant (2024-2025)</h2>
-              <small>Written by Stefano Confalone</small>
-              <br></br>
-              <small>Last updated: Apr. 4, 2026</small>
+              <header>
+                <h2>Website For a Restaurant (2024-2025)</h2>
+                <small>Written by Stefano Confalone</small>
+                <br></br>
+                <small>Last updated: Apr. 4, 2026</small>
+              </header>
 
               <p>
                 {`
