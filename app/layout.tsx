@@ -1,35 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "bootstrap/dist/css/bootstrap.css";
+import { ReactNode } from "react";
 import "@/styles/colors.css";
 import "@/styles/globals.css";
+import { lato } from "@/utils/fonts";
 import "@/styles/typography.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Home - Stefano Confalone Sofware Development Portfolio",
-  description: "Software development portfolio home page.",
+  description:
+    "This is Stefano Confalone's software development portfolio web site.",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+      <body className={lato.className}>{children}</body>
     </html>
   );
 }

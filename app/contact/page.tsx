@@ -5,7 +5,6 @@ import Content from "@/components/Content/Content";
 import Footer from "@/components/Footer/Footer";
 import Nav from "@/components/Nav/Nav";
 import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
-//import ContactForm from "@/components/ContactForm/ContactForm";
 
 export default function ContactPage() {
   return (
@@ -19,7 +18,6 @@ export default function ContactPage() {
           <Content>
             <BreadcrumbBar text="/ Contact" />
             <section style={{ marginBottom: "100px", padding: "8px" }}>
-              {/* <ContactForm /> */}
               <div
                 style={{
                   display: "flex",
@@ -27,10 +25,10 @@ export default function ContactPage() {
                   padding: "8px",
                 }}
               >
-                <h3 className="h3">Contact Info & Links</h3>
-                <hr></hr>
+                <h2 style={{ marginBottom: "6px" }}>Contact Info & Links</h2>
                 <span>Email: stefano.confalone03@gmail.com</span>
                 <span>Phone: +358 45 324 3803</span>
+
                 <span>
                   LinkedIn:{" "}
                   <a
@@ -40,13 +38,13 @@ export default function ContactPage() {
                     https://www.linkedin.com/in/stefano-confalone-a0ba352a7/
                   </a>
                 </span>
+
                 <span>
                   GitHub:{" "}
                   <a href="https://github.com/constf03" target="blank">
                     https://github.com/constf03
                   </a>
                 </span>
-                <hr></hr>
               </div>
             </section>
           </Content>

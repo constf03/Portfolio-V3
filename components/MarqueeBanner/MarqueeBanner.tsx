@@ -1,9 +1,10 @@
 import Marquee from "react-fast-marquee";
+import { bebasNeue } from "@/utils/fonts";
 import styles from "./MarqueeBanner.module.css";
 
 export default function MarqueeBanner() {
   return (
-    <div className={styles.container_marquee}>
+    <div className={`${styles.container_marquee} ${bebasNeue.className}`}>
       <Marquee speed={100}>
         <span>&#128203;Skills: </span>
         {/* prettier-ignore */ "     "}

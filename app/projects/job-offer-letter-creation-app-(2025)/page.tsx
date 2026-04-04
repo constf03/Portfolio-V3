@@ -1,9 +1,9 @@
 "use client";
+import Image from "next/image";
 import Banner from "@/components/Banner/Banner";
 import BreadcrumbBar from "@/components/BreadcrumbBar/BreadcrumbBar";
 import Content from "@/components/Content/Content";
 import Footer from "@/components/Footer/Footer";
-import Image from "next/image";
 import Image01 from "@/public/images/offerletterapp01.png";
 import Nav from "@/components/Nav/Nav";
 import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
@@ -24,15 +24,19 @@ export default function Page() {
               linkText="Back to projects page."
             />
             <article style={{ padding: "14px" }}>
-              <h2>Job Offer Letter Creation App (2025)</h2>
-              <p>Last updated: Jan. 12, 2026</p>
+              <header>
+                <h2>Job Offer Letter Creation App (2025)</h2>
+                <small>Written by Stefano Confalone</small>
+                <br></br>
+                <small>Last updated: Apr. 4, 2026</small>
+              </header>
 
               <p>
                 This app was made in Microsoft Power Apps. Riihisoft Oy gave me
-                this project as a thesis opportunity. The goal was to develop a
-                low-code business app that small companies can use for
+                this project as a thesis assignment. The goal was to plan and
+                develop a low-code business app that small companies can use for
                 streamlining recruitment-related processes such as job offer
-                letter creation.
+                letter creation in this case.
               </p>
 
               <p>
@@ -59,8 +63,8 @@ export default function Page() {
                 </li>
                 <li>Translations using Azure Translator API</li>
                 <li>
-                  General fixes and improvements to UI (form validation, more
-                  user-friendly inputs etc.)
+                  General fixes and improvements to the UI such as form
+                  validation and more user-friendly inputs.
                 </li>
               </ul>
 
@@ -73,14 +77,15 @@ export default function Page() {
                 <a
                   href="https://www.theseus.fi/handle/10024/905064"
                   target="blank"
-                  style={{
-                    backgroundColor: "rgba(255, 255, 255, 0.8)",
-                    padding: "2px",
-                  }}
                 >
                   www.theseus.fi/handle/10024/905064
                 </a>
                 .
+              </p>
+
+              <p>
+                Below are some screenshots of the low-code Power App running on
+                mobile.
               </p>
               <div className="mt-2">
                 <Image

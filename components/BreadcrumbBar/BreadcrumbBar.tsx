@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { bebasNeue } from "@/utils/fonts";
 import styles from "./BreadcrumbBar.module.css";
 
 interface BreadcrumbBarProps {
@@ -13,7 +14,7 @@ export default function BreadcrumbBar({
   text,
 }: BreadcrumbBarProps) {
   return (
-    <div className={styles.breadcrumb_container}>
+    <div className={`${styles.breadcrumb_container} ${bebasNeue.className}`}>
       <span>{text}</span>
       <Link href={href} legacyBehavior>
         <a className={styles.breadcrumb_link}>

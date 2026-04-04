@@ -3,25 +3,8 @@
     -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.container-edu,
 .container-work-expr {
-  display: flex;
-  flex-direction: column;
-  margin: 6px;
-  margin-top: 16px;
-  padding: 6px;
-  background-color: orange;
-  background-image: url("../public/images/glass_overlay02.png");
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border: 2px solid rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
-}
-
-.container-work-expr span {
-  padding-left: 42px;
-}
-
-.container-edu {
   display: flex;
   flex-direction: column;
   margin: 6px;
@@ -35,7 +18,6 @@
 
 .container-edu:hover,
 .container-work-expr:hover,
-.container-showcase-item:hover,
 .container-cert:hover {
   transform: scale(101%);
   transition: 200ms;
@@ -48,7 +30,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4px;
+  margin-top: 24px;
   row-gap: 24px;
   column-gap: 12px;
 }
@@ -58,45 +40,14 @@
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: start;
+    padding: 8px;
   }
 }
 
 @media only screen and (min-width: 800px) {
   .container-showcase {
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 33% 33% 33%;
   }
-}
-
-.container-showcase-item {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 100%;
-  height: 100%;
-  padding: 8px;
-  border-radius: 6px;
-  backdrop-filter: blur(2px);
-  background-color: var(--container-white);
-}
-
-.container-showcase-item p {
-  margin: 2px;
-  text-justify: inter-word;
-}
-
-.container-showcase-item h4 {
-  font-weight: bold;
-}
-
-.wrapper-showcase-button {
-  display: flex;
-  flex: 1;
-  align-items: flex-end;
-  margin-top: 16px;
-}
-
-.wrapper-showcase-button Button {
-  width: 100%;
 }
 
 .list-certifications {

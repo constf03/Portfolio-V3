@@ -1,11 +1,11 @@
 "use client";
+import Video from "next-video";
 import Banner from "@/components/Banner/Banner";
 import BreadcrumbBar from "@/components/BreadcrumbBar/BreadcrumbBar";
 import Content from "@/components/Content/Content";
 import Footer from "@/components/Footer/Footer";
 import Nav from "@/components/Nav/Nav";
 import UnderNavBar from "@/components/UnderNavBar/UnderNavBar";
-import Video from "next-video";
 import Video01 from "/videos/krj_demo.mp4";
 import Video02 from "/videos/krj_preview01.mp4";
 
@@ -25,26 +25,24 @@ export default function Page() {
               linkText="Back to projects page."
             />
             <article style={{ padding: "14px" }}>
-              <h2>Website For a Restaurant (2024-2025)</h2>
-              <p>Last updated: Jan. 9, 2026</p>
+              <header>
+                <h2>Website For a Restaurant (2024-2025)</h2>
+                <small>Written by Stefano Confalone</small>
+                <br></br>
+                <small>Last updated: Apr. 4, 2026</small>
+              </header>
 
               <p>
-                In my 2024 internship under Tmi J.J.Wessman I began working on a
-                full stack website project for restaurant Ravintola Johnny Hong
-                Kong Hyvinkää. The supervisor of the internship is a co-owner of
-                the restaurant.
+                {`
+                  In my Summer 2024 internship I began working on a
+                  full stack website project for restaurant Ravintola Johnny Hong
+                  Kong Hyvinkää with PERN stack (Postgres, Express, React, Node.js). My internship was hosted under the name of my supervisor's toiminimi and he is the co-owner of the restaurant.
+                `}
               </p>
 
               <p>
                 Link to the website:{" "}
-                <a
-                  href="https://ravintolajohnny.fi"
-                  target="blank"
-                  style={{
-                    backgroundColor: "rgba(255, 255, 255, 0.8)",
-                    padding: "2px",
-                  }}
-                >
+                <a href="https://ravintolajohnny.fi" target="blank">
                   ravintolajohnny.fi
                 </a>
               </p>
@@ -54,21 +52,22 @@ export default function Page() {
                 following features to the site:
               </p>
               <ul>
-                <li>user authentication</li>
+                <li>responsive UI</li>
+                <li>user authentication with Auth0</li>
                 <li>updating user information</li>
                 <li>products to food menu (dynamically loaded JSON objects)</li>
-                <li>admin user feature</li>
+                <li>shopping cart system</li>
+                <li>admin user feature and admin panel</li>
                 <li>
                   ordering system with real-time order status update (no payment
                   integration yet)
                 </li>
-                <li>localization in Finnish and English</li>
-                <li>responsive UI.</li>
+                <li>translations in Finnish and English (i18n).</li>
               </ul>
 
               <p>
-                Here is a demo showcase of what the website looked like in 2024.
-                In the demo I also show the admin panel.
+                Below is a demo showcase of what the website looked like in
+                2024. In the demo I also show the admin panel.
               </p>
 
               <div className="mt-4 mb-4">
@@ -77,10 +76,11 @@ export default function Page() {
 
               <p>
                 {`
-                    A year later in my second internship (2025) under the same freelancing company,
-                    I refreshed the whole website's look making it look more modern and user-friendly.
+                    A year later in my second Summer internship (2025) under the same toiminimi
+                    I updated the whole website's look making it look more modern and user-friendly.
+                    I improved the site's SEO with React Helmet Async.
                     I also added a SMS confirmation feature to the order system using Twilio.
-                    Below is another video showcasing the updated look of the site.
+                    Below is another video showing the updated look of the site.
                   `}
               </p>
 
@@ -93,7 +93,7 @@ export default function Page() {
                 frontend and backend Docker containers ran on https protocol,
                 but it was later moved to Google Cloud and hosted using a
                 reverse proxy on a Linux VM. When it was hosted on AWS, code was
-                deployed through Codebuild.
+                deployed from the main branch using Codebuild.
               </p>
 
               <p>
@@ -105,12 +105,12 @@ export default function Page() {
               </p>
 
               <p>
-                Other (frameworks, libraries etc.):{" "}
-                <b>Sequelize ORM, TailwindCSS, Vite, Auth0</b>
+                Frameworks & Libraries:{" "}
+                <b>Sequelize, Tailwinds, Vite, Auth0, MUI</b>
               </p>
 
               <p>
-                Service platforms:{" "}
+                Platforms:{" "}
                 <b>
                   GitHub, Aiven, Amazon Web Services (Elastic Container Service,
                   Codebuild, Route 53)

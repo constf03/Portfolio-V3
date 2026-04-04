@@ -20,41 +20,40 @@ export default function HomePage() {
           <Content>
             <section style={{ padding: "8px" }}>
               <article>
-                <h2>Welcome! Tervetuloa! &#128075;</h2>
+                <h1 style={{ marginBottom: "12px" }}>
+                  Welcome! Tervetuloa! &#128075;
+                </h1>
+
                 <p>
                   This is my personal portfolio website I created using NextJS.
                 </p>
+
                 <p>
                   I graduated Jyväskylä University of Applied Sciences (Jamk) in
                   Finland in December 2025 with a Bachelor of Engineering degree
                   in information and communication technology.
                 </p>
+
                 <p>
                   On this website you can find showcases of my software
                   development-related projects and information about my
-                  competences.
+                  competences. <b>Check out the Projects tab!</b>
+                </p>
+
+                <p>
+                  {`
+                      📌If you're interested in seeing how I write Typescript JSX code, you can find the
+                      source code of this website here: 
+                    `}
+                  <a
+                    href="https://github.com/constf03/Portfolio-V3/tree/main"
+                    target="blank"
+                  >
+                    https://github.com/constf03/Portfolio-V3/tree/main
+                  </a>
+                  .
                 </p>
               </article>
-              {/*
-              <div>
-                <div
-                  style={{
-                    width: "100%",
-                    height: 24,
-                    marginTop: "50px",
-                    backgroundColor: "black",
-                  }}
-                ></div>
-                <Slideshow />
-                <div
-                  style={{
-                    width: "100%",
-                    height: 24,
-                    backgroundColor: "black",
-                  }}
-                ></div>
-              </div>
-              */}
             </section>
           </Content>
           <Footer />

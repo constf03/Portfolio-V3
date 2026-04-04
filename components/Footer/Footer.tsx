@@ -1,14 +1,14 @@
-import React from "react";
-import styles from "./Footer.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import logo_linkedin from "../../public/images/LinkedIn_logo_initials.png";
-import logo_github from "../../public/images/github.png";
+import { bebasNeue } from "@/utils/fonts";
+import Image01 from "../../public/images/LinkedIn_logo_initials.png";
+import Image02 from "../../public/images/github.png";
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <small className={styles.copyright_tag}>
+      <small className={bebasNeue.className}>
         Stefano Confalone | Personal Website
       </small>
       <div className={styles.footer_links}>
@@ -16,15 +16,10 @@ export default function Footer() {
           href="https://www.linkedin.com/in/stefano-confalone-a0ba352a7/"
           target="blank"
         >
-          <Image
-            src={logo_linkedin}
-            width={34}
-            height={34}
-            alt="LinkedIn logo"
-          />
+          <Image src={Image01} width={34} height={34} alt="LinkedIn logo" />
         </Link>
         <Link href="https://github.com/constf03" target="blank">
-          <Image src={logo_github} width={34} height={34} alt="GitHub logo" />
+          <Image src={Image02} width={34} height={34} alt="GitHub logo" />
         </Link>
       </div>
     </footer>
