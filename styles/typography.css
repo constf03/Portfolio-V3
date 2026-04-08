@@ -3,6 +3,12 @@
     -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+#content-home {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .container-edu,
 .container-work-expr {
   display: flex;
@@ -42,16 +48,15 @@
     align-items: start;
     padding: 8px;
   }
+
+  #content-home {
+    flex-direction: row;
+  }
 }
 
 @media only screen and (min-width: 800px) {
   .container-showcase {
     grid-template-columns: 33% 33% 33%;
-  }
-
-  #content-home {
-    display: flex;
-    gap: 24px;
   }
 }
 

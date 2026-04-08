@@ -23,9 +23,9 @@ export default function HomePage() {
           <Content>
             <section style={{ padding: "8px" }} id="content-home">
               <article>
-                <h1 style={{ marginBottom: "12px" }}>
+                <h2 style={{ marginBottom: "12px" }}>
                   Welcome! Tervetuloa! &#128075;
-                </h1>
+                </h2>
 
                 <p>
                   This is my personal portfolio website I created using Next.js.
