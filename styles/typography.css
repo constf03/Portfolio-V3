@@ -48,6 +48,11 @@
   .container-showcase {
     grid-template-columns: 33% 33% 33%;
   }
+
+  #content-home {
+    display: flex;
+    gap: 24px;
+  }
 }
 
 .list-certifications {
