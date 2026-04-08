@@ -59,13 +59,16 @@ export default function HomePage() {
               </article>
               <aside>
                 <h3>Featured Projects</h3>
+
                 <br></br>
+
                 <FeaturedCard
                   title="Website For a Restaurant (2024-2025)"
                   imgSrc={Image01}
                   imgAltText="Website For a Restaurant Preview"
                   href="projects/website-for-a-restaurant-(2024-2025)"
                 />
+
                 <FeaturedCard
                   title="Job Offer Letter Creation App (2025)"
                   imgSrc={Image02}
