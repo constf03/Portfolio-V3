@@ -24,13 +24,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className={styles.container_project_card}>
-      <h3>
-        <b>{title}</b>
-      </h3>
-
-      <span>Topic: {topic}</span>
-
-      <div>
+      <div className={styles.wrapper_project_card_image}>
         <Image
           src={imgSrc}
           width={1}
@@ -42,14 +36,24 @@ export default function ProjectCard({
         />
       </div>
 
-      <p>{description}</p>
+      <div className={styles.wrapper_project_card_body}>
+        <div className={styles.wrapper_project_card_info}>
+          <h3>
+            <b>{title}</b>
+          </h3>
 
-      <div className={styles.wrapper_project_card_button}>
-        <Link href={href} style={{ width: "100%" }}>
-          <button style={{ width: "100%" }}>
-            <span style={{ color: "white" }}>{buttonText}</span>
-          </button>
-        </Link>
+          <span>Topic: {topic}</span>
+
+          <p className={styles.wrapper_project_card_info_desc}>{description}</p>
+        </div>
+
+        <div className={styles.wrapper_project_card_button}>
+          <Link href={href} style={{ width: "100%" }}>
+            <button style={{ width: "100%" }}>
+              <span style={{ color: "white" }}>{buttonText}</span>
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

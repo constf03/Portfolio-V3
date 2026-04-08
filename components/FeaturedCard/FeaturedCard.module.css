@@ -2,21 +2,35 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 4px;
+  padding: 0px;
   margin: 0px 0px 6px 0px;
   border: 1px solid orange;
   outline: 1px solid black;
   border-radius: 2px;
-  background-color: rgba(0, 242, 255, 0.285);
+  background-image: url("../../public/images/vista.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   backdrop-filter: blur(2px);
+  text-shadow: 1px 1px black;
+}
+
+@media screen and (min-width: 600px) {
+  .container_featured_card {
+    font-size: small;
+  }
 }
 
 @media screen and (min-width: 800px) {
   .container_featured_card {
     width: 300px;
+    font-size: medium;
   }
 }
 
 .featured_image_wrapper {
+  display: flex;
+  align-items: center;
+  justify-self: center;
   width: 128px;
 }
