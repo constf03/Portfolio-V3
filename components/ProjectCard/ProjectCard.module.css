@@ -18,6 +18,10 @@
   }
 }
 
+.project_card_image {
+  border-bottom: 8px solid orange;
+}
+
 .wrapper_project_card_body {
   display: flex;
   flex-direction: column;

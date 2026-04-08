@@ -24,17 +24,16 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className={styles.container_project_card}>
-      <div className={styles.wrapper_project_card_image}>
-        <Image
-          src={imgSrc}
-          width={1}
-          height={1}
-          layout="responsive"
-          alt={imgAltText}
-          loading="lazy"
-          placeholder="blur"
-        />
-      </div>
+      <Image
+        src={imgSrc}
+        width={1}
+        height={1}
+        layout="responsive"
+        alt={imgAltText}
+        loading="lazy"
+        placeholder="blur"
+        className={styles.project_card_image}
+      />
 
       <div className={styles.wrapper_project_card_body}>
         <div className={styles.wrapper_project_card_info}>
