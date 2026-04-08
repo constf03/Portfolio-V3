@@ -12,5 +12,6 @@
   white-space: pre-wrap;
   font-size: large;
   border-bottom: 2px solid black;
-  text-shadow: var(--text-outlined-white);
+  text-shadow: 2px 2px black;
+  letter-spacing: 0.5px;
 }
