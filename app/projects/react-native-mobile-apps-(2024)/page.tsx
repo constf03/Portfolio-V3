@@ -21,11 +21,7 @@ export default function Page() {
           </Banner>
           <UnderNavBar />
           <Content>
-            <BreadcrumbBar
-              text="/ Projects / React Native Mobile Apps (2024)"
-              href="/projects"
-              linkText="Back to projects page."
-            />
+            <BreadcrumbBar href="/projects" linkText="Back to projects page." />
             <article style={{ padding: "14px" }}>
               <h2>React Native Mobile Apps (2024)</h2>
               <p>Last updated: Jan. 12, 2026</p>

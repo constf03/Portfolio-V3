@@ -33,4 +33,5 @@
   align-items: center;
   justify-self: center;
   width: 128px;
+  border-right: 4px solid orange;
 }

@@ -18,11 +18,7 @@ export default function Page() {
           </Banner>
           <UnderNavBar />
           <Content>
-            <BreadcrumbBar
-              text={`/ Projects / Full Stack Game: "Meteorite Destroyers" (2023)`}
-              href="/projects"
-              linkText="Back to projects page."
-            />
+            <BreadcrumbBar href="/projects" linkText="Back to projects page." />
             <article style={{ padding: "14px" }}>
               <h2>{`Full Stack Game: "Meteorite Destroyers" (2023)`}</h2>
               <p>Last updated: Mar. 24, 2026</p>
