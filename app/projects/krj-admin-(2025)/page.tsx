@@ -24,16 +24,41 @@ export default function Page() {
               linkText="Back to projects page."
             />
             <article style={{ padding: "14px" }}>
-              <h2>KRJ Admin (2025)</h2>
-              <p>Last updated: Jan. 12, 2026</p>
+              <header>
+                <h2>KRJ Admin (2025)</h2>
+                <small>Written by Stefano Confalone</small>
+                <br></br>
+                <small>Last updated: Apr. 5, 2026</small>
+              </header>
 
               <p>
-                This is a private React Native Expo application that uses the
-                API of the restaurant website implementation for handling
-                customer orders. This app provides a notification system with
-                sound that alerts if new orders are awaiting and a UI for
-                viewing all orders, accepting or rejecting them and setting a
-                time estimate for orders.
+                {`
+                  This private React Native Expo application utilizes the API of
+                  the restaurant website implementation for handling customer
+                  orders. This app provides a notification system with sound that
+                  alerts if new orders are awaiting and a UI for viewing all
+                  orders, accepting or rejecting them and setting a time estimate
+                  for orders.
+                `}
+              </p>
+
+              <p>
+                {`
+                  I worked on this mobile application project during my Summer 2025 internship
+                  and it was one of 3 bigger projects I completed in the internship.
+                  I delivered the solution within a month.
+                `}
+              </p>
+
+              <p>
+                {`
+                  Below there are screenshots of the app running on iOS.
+                  When the app launches it first shows a loading screen
+                  while in the background it preloads all resources of the app
+                  such as images and fonts.
+                  Once they're loaded it navigates to the dashboard which is the
+                  main screen of the app.
+                `}
               </p>
 
               <div>

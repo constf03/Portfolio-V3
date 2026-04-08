@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description: "Software development portfolio projects showcase page.",
 };
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: ReactNode;
 }>) {
-  return <div>{children}</div>;
+  return children;
 }
