@@ -16,7 +16,7 @@ export default function AboutPage() {
           </Banner>
           <UnderNavBar />
           <Content>
-            <BreadcrumbBar text="/ About" />
+            <BreadcrumbBar />
             <section style={{ marginBottom: "100px", padding: "8px" }}>
               {/*WHOAMI SECTION START*/}
               <article>

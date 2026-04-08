@@ -24,7 +24,7 @@ export default function ProjectsPage() {
           </Banner>
           <UnderNavBar />
           <Content>
-            <BreadcrumbBar text="/ Projects" />
+            <BreadcrumbBar />
             <section style={{ marginBottom: "100px", padding: "8px" }}>
               <article>
                 <h1>Projects Showcase</h1>

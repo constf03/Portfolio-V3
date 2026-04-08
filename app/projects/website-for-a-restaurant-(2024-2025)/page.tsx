@@ -19,11 +19,7 @@ export default function Page() {
           </Banner>
           <UnderNavBar />
           <Content>
-            <BreadcrumbBar
-              text="/ Projects / Website For a Restaurant (2024-2025)"
-              href="/projects"
-              linkText="Back to projects page."
-            />
+            <BreadcrumbBar href="/projects" linkText="Back to projects page." />
             <article style={{ padding: "14px" }}>
               <header>
                 <h2>Website For a Restaurant (2024-2025)</h2>

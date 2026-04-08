@@ -16,7 +16,7 @@ export default function ContactPage() {
           </Banner>
           <UnderNavBar />
           <Content>
-            <BreadcrumbBar text="/ Contact" />
+            <BreadcrumbBar />
             <section style={{ marginBottom: "100px", padding: "8px" }}>
               <div
                 style={{

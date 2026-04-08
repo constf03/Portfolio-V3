@@ -18,20 +18,20 @@ export default function Page() {
           </Banner>
           <UnderNavBar />
           <Content>
-            <BreadcrumbBar
-              text="/ Projects / Fictional IPTV Website (2024)"
-              href="/projects"
-              linkText="Back to projects page."
-            />
+            <BreadcrumbBar href="/projects" linkText="Back to projects page." />
             <article style={{ padding: "14px" }}>
-              <h2>Fictional IPTV Website (2024)</h2>
-              <p>Last updated: Jan. 12, 2026</p>
+              <header>
+                <h2>Fictional IPTV Website (2024)</h2>
+                <small>Written by Stefano Confalone</small>
+                <br></br>
+                <small>Last updated: Apr. 9, 2026</small>
+              </header>
 
               <p>
                 I made this fictional IPTV service website as a final work
-                assignment on a web visualization course. It is a simple HTML &
-                CSS implementation along with the use of Bootstrap and SCSS
-                pre-processor. The site is responsive too.
+                assignment on a web visualization course in Fall 2024. It is a
+                simple HTML & CSS implementation along with the use of Bootstrap
+                and SCSS pre-processor. The site is responsive too.
               </p>
 
               <p>
@@ -39,10 +39,6 @@ export default function Page() {
                 <a
                   href="https://constf03.github.io/Fictional-IPTV-Service-Website/"
                   target="blank"
-                  style={{
-                    backgroundColor: "rgba(255, 255, 255, 0.8)",
-                    padding: "2px",
-                  }}
                 >
                   constf03.github.io/Fictional-IPTV-Service-Website/
                 </a>
