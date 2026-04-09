@@ -21,9 +21,9 @@ export default function Banner({ children }: BannerProps) {
             alt="Stefano Confalone"
             loading="lazy"
           />
-          <div style={{ display: "flex", flexDirection: "column" }}>
+          <header style={{ display: "flex", flexDirection: "column" }}>
             <h1 className={`${styles.name_tag} ${bebasNeue.className}`}>
-              <b>Stefano Confalone</b>
+              <strong>Stefano Confalone</strong>
             </h1>
 
             <span>
@@ -34,10 +34,10 @@ export default function Banner({ children }: BannerProps) {
               Bachelor of Engineering, Information and Communication Technology
               (Jamk 2025) &#127891;
             </span>
-          </div>
+          </header>
         </div>
 
-        <div className={styles.nav_wrapper}>{children}</div>
+        <nav className={styles.nav_wrapper}>{children}</nav>
       </div>
     </div>
   );
