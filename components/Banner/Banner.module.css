@@ -1,8 +1,10 @@
 .banner {
-  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   background: var(--banner-bg);
   color: white;
+  flex-direction: column;
 }
 
 .banner_overlay {
@@ -13,10 +15,11 @@
 }
 
 .banner_head {
-  padding: 6px 24px;
-  gap: 18px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding: 6px 24px;
+  gap: 18px;
 }
 
 .name_tag {
@@ -29,26 +32,23 @@
   outline: 1.5px solid black;
 }
 
-@media only screen and (max-width: 500px) {
-  .banner {
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .banner_head {
-    align-items: center;
-  }
-
-  .nav_wrapper {
-    justify-self: center;
-  }
-
-  .education_tag {
-    display: none;
-  }
+.education_tag {
+  display: none;
 }
 
-@media only screen and (min-width: 501px) {
+.nav_wrapper {
+  margin-top: -12px;
+}
+
+@media screen and (min-width: 600px) {
+  .banner_head {
+    padding: 10px 30px;
+  }
+
+  .name_tag {
+    font-size: 42px;
+  }
+
   .banner {
     flex-direction: column;
     border-radius: 25px 25px 0px 0px;
@@ -58,21 +58,14 @@
     border-radius: 25px 25px 0px 0px;
   }
 
-  .name_tag {
-    white-space: nowrap;
-  }
-
   .nav_wrapper {
-    justify-self: center;
+    justify-self: end;
+    margin-top: -24px;
   }
-}
 
-@media screen and (min-width: 600px) {
-  .banner_head {
-    padding: 10px 30px;
-  }
-  .name_tag {
-    font-size: 42px;
+  .education_tag {
+    display: inline;
+    max-width: 256px;
   }
 }
 
@@ -81,7 +74,12 @@
     flex-direction: row;
   }
 
+  .banner_head {
+    align-items: start;
+  }
+
   .nav_wrapper {
-    align-self: flex-end;
+    align-self: end;
+    margin-top: -58px;
   }
 }

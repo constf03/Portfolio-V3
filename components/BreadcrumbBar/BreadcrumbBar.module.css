@@ -5,6 +5,7 @@
   padding: 6px;
   background: var(--nav-bg);
   border-bottom: 1px solid white;
+  color: white;
 }
 
 .link_text {

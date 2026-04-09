@@ -17,8 +17,8 @@ export default function Page() {
             <Nav currentLoc="showcase" />
           </Banner>
           <UnderNavBar />
+          <BreadcrumbBar href="/projects" linkText="Back to projects page." />
           <Content>
-            <BreadcrumbBar href="/projects" linkText="Back to projects page." />
             <article style={{ padding: "14px" }}>
               <header>
                 <h2>Fictional IPTV Website (2024)</h2>

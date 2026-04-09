@@ -21,7 +21,12 @@ export default function BreadcrumbBar({
   }, [pathName]);
 
   const formatPathName = (str: string): string => {
-    return str.replaceAll("-", " ").replaceAll("/", " / ");
+    const formatted = str
+      .replaceAll("-", " ")
+      .replaceAll("/", " / ")
+      .replaceAll("/ portfolio v3 ", ""); // temp fix for github pages
+
+    return formatted;
   };
 
   return (

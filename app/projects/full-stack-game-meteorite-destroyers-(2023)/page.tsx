@@ -17,8 +17,8 @@ export default function Page() {
             <Nav currentLoc="showcase" />
           </Banner>
           <UnderNavBar />
+          <BreadcrumbBar href="/projects" linkText="Back to projects page." />
           <Content>
-            <BreadcrumbBar href="/projects" linkText="Back to projects page." />
             <article style={{ padding: "14px" }}>
               <h2>{`Full Stack Game: "Meteorite Destroyers" (2023)`}</h2>
               <p>Last updated: Mar. 24, 2026</p>

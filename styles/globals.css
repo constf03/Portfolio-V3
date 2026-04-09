@@ -81,11 +81,7 @@ a:hover {
   flex-direction: column;
 }
 
-.page-main {
-  animation: fadeInOpacity 1s;
-}
-
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 600px) {
   .page {
     margin-top: 50px;
     padding: 4px;
