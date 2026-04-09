@@ -24,7 +24,7 @@ export default function BreadcrumbBar({
     const formatted = str
       .replaceAll("-", " ")
       .replaceAll("/", " / ")
-      .replaceAll("/ portfolio v3 ", ""); // temp fix for github pages
+      .replaceAll("/ portfolio v3", ""); // temp fix for github pages
 
     return formatted;
   };
