@@ -17,8 +17,8 @@ export default function Page() {
             <Nav currentLoc="showcase" />
           </Banner>
           <UnderNavBar />
+          <BreadcrumbBar href="/projects" linkText="Back to projects page." />
           <Content>
-            <BreadcrumbBar href="/projects" linkText="Back to projects page." />
             <article style={{ padding: "14px" }}>
               <h2>Software Design Projects</h2>
               <p>Last updated: Feb. 13, 2026</p>

@@ -23,8 +23,8 @@ export default function ProjectsPage() {
             <Nav currentLoc="showcase" />
           </Banner>
           <UnderNavBar />
+          <BreadcrumbBar />
           <Content>
-            <BreadcrumbBar />
             <section style={{ marginBottom: "100px", padding: "8px" }}>
               <article>
                 <h1>Projects Showcase</h1>

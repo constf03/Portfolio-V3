@@ -20,8 +20,8 @@ export default function Page() {
             <Nav currentLoc="showcase" />
           </Banner>
           <UnderNavBar />
+          <BreadcrumbBar href="/projects" linkText="Back to projects page." />
           <Content>
-            <BreadcrumbBar href="/projects" linkText="Back to projects page." />
             <article style={{ padding: "14px" }}>
               <h2>React Native Mobile Apps (2024)</h2>
               <p>Last updated: Jan. 12, 2026</p>

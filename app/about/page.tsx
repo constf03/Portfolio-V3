@@ -15,8 +15,8 @@ export default function AboutPage() {
             <Nav currentLoc="about" />
           </Banner>
           <UnderNavBar />
+          <BreadcrumbBar />
           <Content>
-            <BreadcrumbBar />
             <section style={{ marginBottom: "100px", padding: "8px" }}>
               {/*WHOAMI SECTION START*/}
               <article>
