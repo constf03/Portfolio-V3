@@ -22,7 +22,7 @@ export default function BreadcrumbBar({
 
   const formatPathName = (str: string): string => {
     const formatted = str
-      .replaceAll("/portfolio-v3", "") // temp fix for github pages
+      .replaceAll("/Portfolio-V3", "") // temp fix for github pages
       .replaceAll("-", " ")
       .replaceAll("/", " / ");
 
