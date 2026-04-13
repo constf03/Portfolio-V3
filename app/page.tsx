@@ -42,20 +42,6 @@ export default function HomePage() {
                   development projects and information about my competences.{" "}
                   <b>Check out the Projects tab!</b>
                 </p>
-
-                <p>
-                  {`
-                      📌If you're interested about seeing how I write Typescript/JSX code, structure a Next.js project etc.
-                      you can find the source code of this website here: 
-                    `}
-                  <a
-                    href="https://github.com/constf03/Portfolio-V3/tree/main"
-                    target="blank"
-                  >
-                    https://github.com/constf03/Portfolio-V3/tree/main
-                  </a>
-                  .
-                </p>
               </article>
               <aside>
                 <h3>Featured Projects</h3>
