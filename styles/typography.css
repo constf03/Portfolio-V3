@@ -16,18 +16,12 @@
   margin: 6px;
   margin-top: 16px;
   padding: 6px;
-  background-color: rgba(0, 255, 242, 0.2);
-  background-image: url("../public/images/glass_overlay02.png");
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  background-color: orange;
+  border: 2px solid white;
+  border-radius: 2px;
+  outline: 1px solid black;
   backdrop-filter: blur(2px);
-}
-
-.container-edu:hover,
-.container-work-expr:hover,
-.container-cert:hover {
-  transform: scale(101%);
-  transition: 200ms;
-  box-shadow: 0px 0px 15px 0px black;
+  text-shadow: 0px 0px 4px black;
 }
 
 .container-showcase {
@@ -42,6 +36,15 @@
 }
 
 @media only screen and (min-width: 600px) {
+  .container-edu:hover,
+  .container-work-expr:hover,
+  .container-cert:hover {
+    transform: scale(101%);
+    transition: 200ms;
+    box-shadow: 0px 0px 15px 0px black;
+    background: linear-gradient(355deg, orange 60%, rgb(255, 208, 119) 95%);
+  }
+
   .container-showcase {
     display: grid;
     grid-template-columns: 50% 50%;

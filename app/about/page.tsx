@@ -19,10 +19,8 @@ export default function AboutPage() {
           <Content>
             <section style={{ marginBottom: "100px", padding: "8px" }}>
               {/*WHOAMI SECTION START*/}
-              <article>
-                <h2 style={{ marginBottom: "6px" }}>
-                  What Kind of Developer Am I?
-                </h2>
+              <article style={{ marginBottom: "16px" }}>
+                <h2>What Kind of Developer Am I?</h2>
                 <p>
                   {`
                       I am a software developer who is passionate about everything
@@ -45,21 +43,31 @@ export default function AboutPage() {
               {/*WHOAMI SECTION END*/}
 
               {/*LANGUAGES SECTION START*/}
-              <section>
-                <h2 style={{ marginBottom: "6px" }}>Languages</h2>
-                <div
-                  style={{ display: "flex", flexDirection: "column", gap: 4 }}
-                >
-                  <span>Finnish - native</span>
-                  <span>English - professional working profiency</span>
-                  <span>Italian - native</span>
-                </div>
+              <section style={{ marginBottom: "24px" }}>
+                <h2 style={{ marginBottom: "8px" }}>Languages</h2>
+                <ul>
+                  <li>Finnish - native</li>
+                  <li>English - professional working profiency</li>
+                  <li>Italian - native</li>
+                </ul>
               </section>
               {/*LANGUAGES SECTION END*/}
 
               {/*IT WORK EXPERIENCE SECTION START*/}
               <section>
-                <h2 style={{ marginTop: "46px" }}>IT Work Experience</h2>
+                <h2>IT Work Experience</h2>
+                <div className="container-work-expr">
+                  <h3>
+                    <b>{`
+                      Backend Developer (Psyche's Royale Gaming ry) *Non-Profit*
+                    `}</b>
+                  </h3>
+                  <span>April 2026-</span>
+                  <span>
+                    {"Volunteer NestJS Backend developer for Alt Zone project."}
+                  </span>
+                </div>
+
                 <div className="container-work-expr">
                   <h3>
                     <b>Thesis work (Riihisoft Oy)</b>
