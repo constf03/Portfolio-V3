@@ -19,7 +19,10 @@ export default function AboutPage() {
           <Content>
             <section style={{ marginBottom: "100px", padding: "8px" }}>
               {/*WHOAMI SECTION START*/}
-              <article style={{ marginBottom: "16px" }}>
+              <article
+                style={{ marginBottom: "24px" }}
+                className="container-content-box"
+              >
                 <h2>What Kind of Developer Am I?</h2>
                 <p>
                   {`
@@ -43,7 +46,10 @@ export default function AboutPage() {
               {/*WHOAMI SECTION END*/}
 
               {/*LANGUAGES SECTION START*/}
-              <section style={{ marginBottom: "24px" }}>
+              <section
+                style={{ marginBottom: "24px" }}
+                className="container-content-box"
+              >
                 <h2 style={{ marginBottom: "8px" }}>Languages</h2>
                 <ul>
                   <li>Finnish - native</li>
@@ -54,7 +60,10 @@ export default function AboutPage() {
               {/*LANGUAGES SECTION END*/}
 
               {/*IT WORK EXPERIENCE SECTION START*/}
-              <section>
+              <section
+                style={{ marginBottom: "24px" }}
+                className="container-content-box"
+              >
                 <h2>IT Work Experience</h2>
                 <div className="container-work-expr">
                   <h3>
@@ -95,8 +104,8 @@ export default function AboutPage() {
               {/*IT WORK EXPERIENCE SECTION END*/}
 
               {/*EDUCATION SECTION START*/}
-              <section>
-                <h2 style={{ marginTop: "46px" }}>Education</h2>
+              <section className="container-content-box">
+                <h2>Education</h2>
                 <div className="container-edu">
                   <h3>
                     <b>
