@@ -14,87 +14,89 @@ export default function Page() {
       <div className="page">
         <div className="page-content">
           <Banner>
-            <Nav currentLoc="showcase" />
+            <Nav />
           </Banner>
           <UnderNavBar />
           <BreadcrumbBar href="/projects" linkText="Back to projects page." />
           <Content>
-            <article style={{ padding: "14px" }}>
-              <header>
-                <h2>Job Offer Letter Creation App (2025)</h2>
-                <small>Written by Stefano Confalone</small>
-                <br></br>
-                <small>Last updated: Apr. 4, 2026</small>
-              </header>
+            <div className="content-box-wrapper-nobg">
+              <article className="container-content-box">
+                <header>
+                  <h2>Job Offer Letter Creation App (2025)</h2>
+                  <small>Written by Stefano Confalone</small>
+                  <br></br>
+                  <small>Last updated: Apr. 4, 2026</small>
+                </header>
 
-              <p>
-                This app was made in Microsoft Power Apps. Riihisoft Oy gave me
-                this project as a thesis assignment. The goal was to plan and
-                develop a low-code business app that small companies can use for
-                streamlining recruitment-related processes such as job offer
-                letter creation in this case.
-              </p>
+                <p>
+                  This app was made in Microsoft Power Apps. Riihisoft Oy gave
+                  me this project as a thesis assignment. The goal was to plan
+                  and develop a low-code business app that small companies can
+                  use for streamlining recruitment-related processes such as job
+                  offer letter creation in this case.
+                </p>
 
-              <p>
-                The Power App uses an Azure-hosted PostgreSQL database as the
-                main datasource.
-              </p>
+                <p>
+                  The Power App uses an Azure-hosted PostgreSQL database as the
+                  main datasource.
+                </p>
 
-              <p>
-                {`
+                <p>
+                  {`
                     During my thesis I couldn't fully complete the app and it is not publicly available.
                     It is mainly a prototype/demo implementation of what can be achieved using low-code tools.
                   `}
-              </p>
+                </p>
 
-              <p>Future development ideas:</p>
-              <ul>
-                <li>
-                  PDF export feature for created offer letter objects (Azure
-                  Blob Storage)
-                </li>
-                <li>
-                  AI integration for offer letter content generation (Azure
-                  OpenAI)
-                </li>
-                <li>Translations using Azure Translator API</li>
-                <li>
-                  General fixes and improvements to the UI such as form
-                  validation and more user-friendly inputs.
-                </li>
-              </ul>
+                <p>Future development ideas:</p>
+                <ul>
+                  <li>
+                    PDF export feature for created offer letter objects (Azure
+                    Blob Storage)
+                  </li>
+                  <li>
+                    AI integration for offer letter content generation (Azure
+                    OpenAI)
+                  </li>
+                  <li>Translations using Azure Translator API</li>
+                  <li>
+                    General fixes and improvements to the UI such as form
+                    validation and more user-friendly inputs.
+                  </li>
+                </ul>
 
-              <p>
-                {`
+                <p>
+                  {`
                     This project was featured in my bachelor's thesis
                     "Mobile application development using a low-code platform" (2025).
                     It is publicly available on Theseus:
                   `}
-                <a
-                  href="https://www.theseus.fi/handle/10024/905064"
-                  target="blank"
-                >
-                  www.theseus.fi/handle/10024/905064
-                </a>
-                .
-              </p>
+                  <a
+                    href="https://www.theseus.fi/handle/10024/905064"
+                    target="blank"
+                  >
+                    www.theseus.fi/handle/10024/905064
+                  </a>
+                  .
+                </p>
 
-              <p>
-                Below are some screenshots of the low-code Power App running on
-                mobile.
-              </p>
-              <div className="mt-2">
-                <Image
-                  src={Image01}
-                  width={1}
-                  height={1}
-                  layout="responsive"
-                  alt="job offer letter app preview"
-                  loading="lazy"
-                  placeholder="blur"
-                />
-              </div>
-            </article>
+                <p>
+                  Below are some screenshots of the low-code Power App running
+                  on mobile.
+                </p>
+                <div className="mt-2">
+                  <Image
+                    src={Image01}
+                    width={1}
+                    height={1}
+                    layout="responsive"
+                    alt="job offer letter app preview"
+                    loading="lazy"
+                    placeholder="blur"
+                  />
+                </div>
+              </article>
+            </div>
           </Content>
           <Footer />
         </div>

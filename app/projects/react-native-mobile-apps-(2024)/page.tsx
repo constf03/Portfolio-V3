@@ -17,94 +17,96 @@ export default function Page() {
       <div className="page">
         <div className="page-content">
           <Banner>
-            <Nav currentLoc="showcase" />
+            <Nav />
           </Banner>
           <UnderNavBar />
           <BreadcrumbBar href="/projects" linkText="Back to projects page." />
           <Content>
-            <article style={{ padding: "14px" }}>
-              <h2>React Native Mobile Apps (2024)</h2>
-              <p>Last updated: Jan. 12, 2026</p>
+            <div className="content-box-wrapper-nobg">
+              <article className="container-content-box">
+                <h2>React Native Mobile Apps (2024)</h2>
+                <p>Last updated: Jan. 12, 2026</p>
 
-              <div className="mt-4 mb-4">
-                <h4>MoviesApp</h4>
-                <p>
-                  Source code available on GitHub:{" "}
-                  <a
-                    href="https://github.com/constf03/MoviesApp"
-                    target="blank"
-                    style={{
-                      backgroundColor: "rgba(255, 255, 255, 0.8)",
-                      padding: "2px",
-                    }}
-                  >
-                    github.com/constf03/MoviesApp
-                  </a>
-                </p>
-                <Image
-                  width={1}
-                  height={1}
-                  src={Image01}
-                  layout="responsive"
-                  alt="MoviesApp preview"
-                  loading="lazy"
-                  placeholder="blur"
-                />
-              </div>
+                <div className="mt-4 mb-4">
+                  <h4>MoviesApp</h4>
+                  <p>
+                    Source code available on GitHub:{" "}
+                    <a
+                      href="https://github.com/constf03/MoviesApp"
+                      target="blank"
+                      style={{
+                        backgroundColor: "rgba(255, 255, 255, 0.8)",
+                        padding: "2px",
+                      }}
+                    >
+                      github.com/constf03/MoviesApp
+                    </a>
+                  </p>
+                  <Image
+                    width={1}
+                    height={1}
+                    src={Image01}
+                    layout="responsive"
+                    alt="MoviesApp preview"
+                    loading="lazy"
+                    placeholder="blur"
+                  />
+                </div>
 
-              <div className="mt-4 mb-4">
-                <h4>MyPlacesApp</h4>
-                <p>
-                  Source code available on GitHub:{" "}
-                  <a
-                    href="https://github.com/constf03/MoviesApp"
-                    target="blank"
-                    style={{
-                      backgroundColor: "rgba(255, 255, 255, 0.8)",
-                      padding: "2px",
-                    }}
-                  >
-                    github.com/constf03/MyPlacesApp
-                  </a>
-                </p>
-                <Image
-                  width={1}
-                  height={1}
-                  src={Image02}
-                  layout="responsive"
-                  alt="MyPlacesApp preview"
-                  loading="lazy"
-                  placeholder="blur"
-                />
-              </div>
+                <div className="mt-4 mb-4">
+                  <h4>MyPlacesApp</h4>
+                  <p>
+                    Source code available on GitHub:{" "}
+                    <a
+                      href="https://github.com/constf03/MoviesApp"
+                      target="blank"
+                      style={{
+                        backgroundColor: "rgba(255, 255, 255, 0.8)",
+                        padding: "2px",
+                      }}
+                    >
+                      github.com/constf03/MyPlacesApp
+                    </a>
+                  </p>
+                  <Image
+                    width={1}
+                    height={1}
+                    src={Image02}
+                    layout="responsive"
+                    alt="MyPlacesApp preview"
+                    loading="lazy"
+                    placeholder="blur"
+                  />
+                </div>
 
-              <div className="mt-4 mb-4">
-                <h4>WeatherApp</h4>
-                <Image
-                  width={1}
-                  height={1}
-                  src={Image03}
-                  layout="responsive"
-                  alt="WeatherApp preview"
-                  loading="lazy"
-                  placeholder="blur"
-                />
-              </div>
+                <div className="mt-4 mb-4">
+                  <h4>WeatherApp</h4>
+                  <Image
+                    width={1}
+                    height={1}
+                    src={Image03}
+                    layout="responsive"
+                    alt="WeatherApp preview"
+                    loading="lazy"
+                    placeholder="blur"
+                  />
+                </div>
 
-              <div className="mt-4 mb-4">
-                <h4>ShoppingListApp</h4>
-                <p>This is a React PWA.</p>
-                <Image
-                  width={1}
-                  height={1}
-                  src={Image04}
-                  layout="responsive"
-                  alt="ShoppingListApp preview"
-                  loading="lazy"
-                  placeholder="blur"
-                />
-              </div>
-            </article>
+                <div className="mt-4 mb-4">
+                  <h4>ShoppingListApp</h4>
+                  <p>This is a React PWA.</p>
+                  <Image
+                    width={1}
+                    height={1}
+                    src={Image04}
+                    layout="responsive"
+                    alt="ShoppingListApp preview"
+                    loading="lazy"
+                    placeholder="blur"
+                  />
+                </div>
+              </article>
+            </div>
           </Content>
           <Footer />
         </div>

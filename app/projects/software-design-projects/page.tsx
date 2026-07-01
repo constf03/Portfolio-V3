@@ -14,43 +14,45 @@ export default function Page() {
       <div className="page">
         <div className="page-content">
           <Banner>
-            <Nav currentLoc="showcase" />
+            <Nav />
           </Banner>
           <UnderNavBar />
           <BreadcrumbBar href="/projects" linkText="Back to projects page." />
           <Content>
-            <article style={{ padding: "14px" }}>
-              <h2>Software Design Projects</h2>
-              <p>Last updated: Feb. 13, 2026</p>
+            <div className="content-box-wrapper-nobg">
+              <article className="container-content-box">
+                <h2>Software Design Projects</h2>
+                <p>Last updated: Feb. 13, 2026</p>
 
-              <p>
-                {`
+                <p>
+                  {`
                   On this page I've compiled small showcases of some of my software design projects.
                   All of these were created using Figma.
                   `}
-              </p>
+                </p>
 
-              <h4>TheAgent++ software prototype</h4>
-              <p>
-                {`
+                <h4>TheAgent++ software prototype</h4>
+                <p>
+                  {`
                   This is a software prototype of a fictional VPN desktop application
                   I named TheAgent++. I created this on an advanced software project course
                   in Spring 2025 and presented it to others students.
                   This might be too detailed for what was meant to be a prototype,
                   but nonetheless it was fun to do and it taught me how to use Figma's more advanced features.
                   `}
-              </p>
-              <div className="mt-2">
-                <Image
-                  src={Image01}
-                  width={1}
-                  height={1}
-                  layout="responsive"
-                  alt="the agent++ preview"
-                  loading="lazy"
-                />
-              </div>
-            </article>
+                </p>
+                <div className="mt-2">
+                  <Image
+                    src={Image01}
+                    width={1}
+                    height={1}
+                    layout="responsive"
+                    alt="the agent++ preview"
+                    loading="lazy"
+                  />
+                </div>
+              </article>
+            </div>
           </Content>
           <Footer />
         </div>
