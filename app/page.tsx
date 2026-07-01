@@ -22,10 +22,8 @@ export default function HomePage() {
           <MarqueeBanner />
           <Content>
             <section style={{ padding: "8px" }} id="content-home">
-              <article>
-                <h2 style={{ marginBottom: "12px" }}>
-                  Welcome! Tervetuloa! &#128075;
-                </h2>
+              <article className="container-content-box">
+                <h2>Welcome! Tervetuloa! &#128075;</h2>
 
                 <p>
                   This is my personal portfolio website I created using Next.js.
@@ -43,10 +41,8 @@ export default function HomePage() {
                   <b>Check out the Projects tab!</b>
                 </p>
               </article>
-              <aside>
-                <h3>Featured Projects</h3>
-
-                <br></br>
+              <aside className="container-content-box">
+                <h3 style={{ marginBottom: "8px" }}>Featured Projects</h3>
 
                 <FeaturedCard
                   title="Website For a Restaurant (2024-2025)"

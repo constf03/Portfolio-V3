@@ -40,6 +40,7 @@ export default function ContactPage() {
                   flexDirection: "column",
                   padding: "8px",
                 }}
+                className="container-content-box"
               >
                 <h2 style={{ marginBottom: "6px" }}>Contact Info & Links</h2>
                 <ul
