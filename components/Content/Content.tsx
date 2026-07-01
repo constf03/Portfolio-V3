@@ -6,7 +6,5 @@ interface ContentProps {
 }
 
 export default function Content({ children }: ContentProps) {
-  return (
-    <main className={`${styles.container_content} page-main`}>{children}</main>
-  );
+  return <main className={`${styles.container_content}`}>{children}</main>;
 }
