@@ -3,11 +3,11 @@ import { useEffect } from "react";
 import { bebasNeue } from "@/utils/fonts";
 import styles from "./Nav.module.css";
 
-interface navProps {
-  currentLoc: string;
+interface NavProps {
+  location?: "home" | "about" | "projects" | "contact" | undefined;
 }
 
-export default function Nav({ currentLoc }: navProps) {
+export default function Nav({ location }: NavProps) {
   const activeLink: string = styles.linkbox_current;
 
   useEffect(() => {
@@ -18,11 +18,11 @@ export default function Nav({ currentLoc }: navProps) {
     const contact: HTMLElement | null =
       document.getElementById("linkbox_contact");
 
-    switch (currentLoc) {
+    switch (location) {
       case "home":
         home?.classList.add(activeLink);
         break;
-      case "showcase":
+      case "projects":
         showcase?.classList.add(activeLink);
         break;
       case "about":
@@ -34,7 +34,7 @@ export default function Nav({ currentLoc }: navProps) {
       default:
         break;
     }
-  }, [currentLoc, activeLink]);
+  }, [location, activeLink]);
 
   return (
     <div className={`${styles.nav} ${bebasNeue.className}`}>

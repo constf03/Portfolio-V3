@@ -14,21 +14,22 @@ export default function Page() {
       <div className="page">
         <div className="page-content">
           <Banner>
-            <Nav currentLoc="showcase" />
+            <Nav />
           </Banner>
           <UnderNavBar />
           <BreadcrumbBar href="/projects" linkText="Back to projects page." />
           <Content>
-            <article style={{ padding: "14px" }}>
-              <header>
-                <h2>KRJ Admin (2025)</h2>
-                <small>Written by Stefano Confalone</small>
-                <br></br>
-                <small>Last updated: Apr. 5, 2026</small>
-              </header>
+            <div className="content-box-wrapper-nobg">
+              <article className="container-content-box">
+                <header>
+                  <h2>KRJ Admin (2025)</h2>
+                  <small>Written by Stefano Confalone</small>
+                  <br></br>
+                  <small>Last updated: Apr. 5, 2026</small>
+                </header>
 
-              <p>
-                {`
+                <p>
+                  {`
                   This private React Native Expo application utilizes the API of
                   the restaurant website implementation for handling customer
                   orders. This app provides a notification system with sound that
@@ -36,18 +37,18 @@ export default function Page() {
                   orders, accepting or rejecting them and setting a time estimate
                   for orders.
                 `}
-              </p>
+                </p>
 
-              <p>
-                {`
+                <p>
+                  {`
                   I worked on this mobile application project during my Summer 2025 internship
                   and it was one of 3 bigger projects I completed in the internship.
                   I delivered the solution within a month.
                 `}
-              </p>
+                </p>
 
-              <p>
-                {`
+                <p>
+                  {`
                   Below there are screenshots of the app running on iOS.
                   When the app launches it first shows a loading screen
                   while in the background it preloads all resources of the app
@@ -55,20 +56,21 @@ export default function Page() {
                   Once they're loaded it navigates to the dashboard which is the
                   main screen of the app.
                 `}
-              </p>
+                </p>
 
-              <div>
-                <Image
-                  width={1}
-                  height={1}
-                  src={Image01}
-                  layout="responsive"
-                  alt="krj admin preview"
-                  loading="lazy"
-                  placeholder="blur"
-                />
-              </div>
-            </article>
+                <div>
+                  <Image
+                    width={1}
+                    height={1}
+                    src={Image01}
+                    layout="responsive"
+                    alt="krj admin preview"
+                    loading="lazy"
+                    placeholder="blur"
+                  />
+                </div>
+              </article>
+            </div>
           </Content>
           <Footer />
         </div>

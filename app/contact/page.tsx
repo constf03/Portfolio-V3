@@ -28,49 +28,51 @@ export default function ContactPage() {
       <div className="page">
         <div className="page-content">
           <Banner>
-            <Nav currentLoc="contact" />
+            <Nav location="contact" />
           </Banner>
           <UnderNavBar />
           <BreadcrumbBar />
           <Content>
-            <section style={{ marginBottom: "100px", padding: "8px" }}>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  padding: "8px",
-                }}
-                className="container-content-box"
-              >
-                <h2 style={{ marginBottom: "6px" }}>Contact Info & Links</h2>
-                <ul
+            <div className="content-box-wrapper">
+              <section>
+                <div
                   style={{
-                    listStyle: "none",
-                    marginLeft: "0px",
+                    display: "flex",
+                    flexDirection: "column",
+                    padding: "8px",
                   }}
+                  className="container-content-box"
                 >
-                  <li>
-                    Email: <PrivacyEmail />
-                  </li>
-                  <li>Phone: +358 45 324 3803</li>
-                  <li>
-                    LinkedIn:{" "}
-                    <a
-                      href="https://www.linkedin.com/in/stefano-confalone-a0ba352a7/"
-                      target="blank"
-                    >
-                      https://www.linkedin.com/in/stefano-confalone-a0ba352a7/
-                    </a>
-                  </li>
-                  <li>
-                    GitHub:{" "}
-                    <a href="https://github.com/constf03" target="blank">
-                      https://github.com/constf03
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </section>
+                  <h2 style={{ marginBottom: "6px" }}>Contact Info & Links</h2>
+                  <ul
+                    style={{
+                      listStyle: "none",
+                      marginLeft: "0px",
+                    }}
+                  >
+                    <li>
+                      Email: <PrivacyEmail />
+                    </li>
+                    <li>Phone: +358 45 324 3803</li>
+                    <li>
+                      LinkedIn:{" "}
+                      <a
+                        href="https://www.linkedin.com/in/stefano-confalone-a0ba352a7/"
+                        target="blank"
+                      >
+                        https://www.linkedin.com/in/stefano-confalone-a0ba352a7/
+                      </a>
+                    </li>
+                    <li>
+                      GitHub:{" "}
+                      <a href="https://github.com/constf03" target="blank">
+                        https://github.com/constf03
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
           </Content>
           <Footer />
         </div>

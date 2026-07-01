@@ -12,4 +12,5 @@
   color: white;
   min-height: 100vh;
   animation: fadeInOpacity 1s;
+  padding: 8px;
 }

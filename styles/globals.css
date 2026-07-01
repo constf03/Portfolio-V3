@@ -3,8 +3,8 @@
    =========================== */
 
 :root {
-  /* Gradients */
-  --page-color: linear-gradient(to bottom, navy, blue, lightblue);
+  /* Component/Class object colors */
+  --page-color: linear-gradient(to bottom, #000080, #0000ff, #add8e6);
   --banner-bg: linear-gradient(
     to top left,
     rgba(255, 255, 255, 0.8),
@@ -42,7 +42,7 @@
     rgb(0, 0, 0) 98%,
     rgba(255, 255, 255, 0.75) 100%
   );
-  --dual-orange: linear-gradient(to bottom, rgb(255, 184, 53) 50%, orange 50%);
+  --dual-orange: linear-gradient(to bottom, #ffb835 50%, #ffa500 50%);
   --dual-orange-hover: linear-gradient(
     to bottom,
     rgb(255, 197, 88) 50%,
@@ -56,8 +56,11 @@
   --container-white: rgba(255, 255, 255, 0.1);
 
   /* Typography */
-  --text-outlined-white:
+  --link-color: #ffa500;
+  --link-color-hover: #ff4500;
+  --text-shadow-cartoony:
     -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  --text-shadow-glow: 0px 0px 6px black;
 
   /* Animations */
   --fadeInOpacity: fadeInOpacity;
@@ -105,12 +108,13 @@ ul {
 }
 
 a {
-  color: orange;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: orangered;
+  color: var(--link-color-hover);
+  text-decoration: underline;
 }
 
 /* ===========================
@@ -159,11 +163,6 @@ a:hover {
   margin-right: auto;
   left: 0;
   right: 0;
-}
-
-.page-content {
-  display: flex;
-  flex-direction: column;
 }
 
 @media only screen and (min-width: 600px) {
@@ -271,11 +270,57 @@ a:hover {
 .container-content-box {
   padding: 6px;
   border: 1px solid gray;
-  box-shadow: 0px 0px 2px 0px black;
-  background-color: rgba(255, 255, 255, 0.2);
-  text-shadow: 1px 1px 2px black;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: var(--text-shadow-glow);
+  width: 100%;
+  height: 100%;
+}
+
+.content-box-wrapper {
+  padding: 8px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px 0px black;
   backdrop-filter: blur(2px);
-  border-radius: 2px;
+  background-image: url("../public/images/glass_overlay02.png");
+  background-color: transparent;
+}
+
+.content-box-wrapper-nobg {
+  padding: 8px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px 0px black;
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.content-box-wrapper-md {
+  padding: 8px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px 0px black;
+  backdrop-filter: blur(2px);
+  background-image: url("../public/images/glass_overlay02.png");
+  background-color: transparent;
+}
+
+/* ===========================
+   Generic Containers
+   =========================== */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Space Between Container */
+.container-sb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -303,6 +348,19 @@ a:hover {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: start;
+  }
+
+  .content-box-wrapper-md {
+    width: 50%;
+  }
+
+  .container,
+  .container-sb {
+    flex-direction: row;
+  }
+
+  #container-welcome {
+    margin-top: -24px;
   }
 }
 

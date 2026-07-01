@@ -20,6 +20,7 @@
   align-items: center;
   padding: 6px 24px;
   gap: 18px;
+  text-shadow: var(--text-shadow-glow);
 }
 
 .name_tag {

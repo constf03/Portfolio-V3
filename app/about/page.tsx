@@ -12,20 +12,21 @@ export default function AboutPage() {
       <div className="page">
         <div className="page-content">
           <Banner>
-            <Nav currentLoc="about" />
+            <Nav location="about" />
           </Banner>
           <UnderNavBar />
           <BreadcrumbBar />
           <Content>
             <section style={{ marginBottom: "100px", padding: "8px" }}>
               {/*WHOAMI SECTION START*/}
-              <article
+              <div
+                className="content-box-wrapper"
                 style={{ marginBottom: "24px" }}
-                className="container-content-box"
               >
-                <h2>What Kind of Developer Am I?</h2>
-                <p>
-                  {`
+                <article className="container-content-box">
+                  <h2>What Kind of Developer Am I?</h2>
+                  <p>
+                    {`
                       I am a software developer who is passionate about everything
                       technology-related.
                       While my core expertise lies within full stack web development,
@@ -41,90 +42,101 @@ export default function AboutPage() {
                       My scope is to continue to grow in my field and possibly share my
                       knowledge and skills with others in the future!
                     `}
-                </p>
-              </article>
+                  </p>
+                </article>
+              </div>
               {/*WHOAMI SECTION END*/}
 
               {/*LANGUAGES SECTION START*/}
-              <section
+              <div
+                className="content-box-wrapper"
                 style={{ marginBottom: "24px" }}
-                className="container-content-box"
               >
-                <h2 style={{ marginBottom: "8px" }}>Languages</h2>
-                <ul>
-                  <li>Finnish - native</li>
-                  <li>English - professional working profiency</li>
-                  <li>Italian - native</li>
-                </ul>
-              </section>
+                <section className="container-content-box">
+                  <h2 style={{ marginBottom: "8px" }}>Languages</h2>
+                  <ul>
+                    <li>Finnish - native</li>
+                    <li>English - professional working profiency</li>
+                    <li>Italian - native</li>
+                  </ul>
+                </section>
+              </div>
               {/*LANGUAGES SECTION END*/}
 
               {/*IT WORK EXPERIENCE SECTION START*/}
-              <section
+              <div
+                className="content-box-wrapper"
                 style={{ marginBottom: "24px" }}
-                className="container-content-box"
               >
-                <h2>IT Work Experience</h2>
-                <div className="container-work-expr">
-                  <h3>
-                    <b>{`
+                <section className="container-content-box">
+                  <h2>IT Work Experience</h2>
+                  <div className="container-work-expr">
+                    <h3>
+                      <b>{`
                       Backend Developer (Psyche's Royale Gaming ry) *Non-Profit*
                     `}</b>
-                  </h3>
-                  <span>April 2026-</span>
-                  <span>
-                    {"Volunteer NestJS Backend developer for Alt Zone project."}
-                  </span>
-                </div>
+                    </h3>
+                    <span>April 2026-</span>
+                    <span>
+                      {
+                        "Volunteer NestJS Backend developer for Alt Zone project."
+                      }
+                    </span>
+                  </div>
 
-                <div className="container-work-expr">
-                  <h3>
-                    <b>Thesis work (Riihisoft Oy)</b>
-                  </h3>
-                  <span>June-December 2025</span>
-                  <span>{"Bachelor's thesis work: Low-code development"}</span>
-                </div>
+                  <div className="container-work-expr">
+                    <h3>
+                      <b>Thesis work (Riihisoft Oy)</b>
+                    </h3>
+                    <span>June-December 2025</span>
+                    <span>
+                      {"Bachelor's thesis work: Low-code development"}
+                    </span>
+                  </div>
 
-                <div className="container-work-expr">
-                  <h3>
-                    <b>Internship (Tmi J.J.Wessman)</b>
-                  </h3>
-                  <span>April-August 2025</span>
-                  <span>Full stack web and mobile development</span>
-                </div>
+                  <div className="container-work-expr">
+                    <h3>
+                      <b>Internship (Tmi J.J.Wessman)</b>
+                    </h3>
+                    <span>April-August 2025</span>
+                    <span>Full stack web and mobile development</span>
+                  </div>
 
-                <div className="container-work-expr">
-                  <h3>
-                    <b>Internship (Tmi J.J.Wessman)</b>
-                  </h3>
-                  <span>May-August 2024</span>
-                  <span>Full stack web development</span>
-                </div>
-              </section>
+                  <div className="container-work-expr">
+                    <h3>
+                      <b>Internship (Tmi J.J.Wessman)</b>
+                    </h3>
+                    <span>May-August 2024</span>
+                    <span>Full stack web development</span>
+                  </div>
+                </section>
+              </div>
               {/*IT WORK EXPERIENCE SECTION END*/}
 
               {/*EDUCATION SECTION START*/}
-              <section className="container-content-box">
-                <h2>Education</h2>
-                <div className="container-edu">
-                  <h3>
-                    <b>
-                      Bachelor of Engineering, Information and Communication
-                      Technology
-                    </b>
-                  </h3>
-                  <span>Jyväskylä University of Applied Sciences</span>
-                  <span>August 2022 - December 2025</span>
-                </div>
+              <div className="content-box-wrapper">
+                <section className="container-content-box">
+                  <h2>Education</h2>
+                  <div className="container-edu">
+                    <h3>
+                      <b>
+                        Bachelor of Engineering, Information and Communication
+                        Technology
+                      </b>
+                    </h3>
+                    <span>Jyväskylä University of Applied Sciences</span>
+                    <span>August 2022 - December 2025</span>
+                  </div>
 
-                <div className="container-edu">
-                  <h3>
-                    <b>Matriculation Examination / High School</b>
-                  </h3>
-                  <span>Riihimäen lukio</span>
-                  <span>August 2019 - June 2022</span>
-                </div>
-              </section>
+                  <div className="container-edu">
+                    <h3>
+                      <b>Matriculation Examination / High School</b>
+                    </h3>
+                    <span>Riihimäen lukio</span>
+                    <span>August 2019 - June 2022</span>
+                  </div>
+                </section>
+              </div>
               {/*EDUCATION SECTION END*/}
             </section>
           </Content>

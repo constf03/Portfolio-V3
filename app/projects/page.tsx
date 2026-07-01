@@ -20,7 +20,7 @@ export default function ProjectsPage() {
       <div className="page">
         <div className="page-content">
           <Banner>
-            <Nav currentLoc="showcase" />
+            <Nav location="projects" />
           </Banner>
           <UnderNavBar />
           <BreadcrumbBar />
