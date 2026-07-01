@@ -16,10 +16,22 @@ export default function Footer() {
           href="https://www.linkedin.com/in/stefano-confalone-a0ba352a7/"
           target="blank"
         >
-          <Image src={Image01} width={34} height={34} alt="LinkedIn logo" />
+          <Image
+            src={Image01}
+            className={styles.footer_link}
+            width={34}
+            height={34}
+            alt="LinkedIn logo"
+          />
         </Link>
         <Link href="https://github.com/constf03" target="blank">
-          <Image src={Image02} width={34} height={34} alt="GitHub logo" />
+          <Image
+            className={styles.footer_link}
+            src={Image02}
+            width={34}
+            height={34}
+            alt="GitHub logo"
+          />
         </Link>
       </div>
     </footer>
