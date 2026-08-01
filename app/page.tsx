@@ -120,8 +120,7 @@ export default function HomePage() {
                   <h2>Welcome! Tervetuloa! &#128075;</h2>
 
                   <p>
-                    This is my personal portfolio website I created using
-                    Next.js.
+                    Welcome to my web portfolio, powered with Next.js.
                   </p>
 
                   <p>
