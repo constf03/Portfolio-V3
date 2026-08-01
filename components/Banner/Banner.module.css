@@ -17,20 +17,14 @@
 .banner_head {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  padding: 6px 24px;
-  gap: 18px;
+  text-align: center;
   text-shadow: var(--text-shadow-glow);
 }
 
 .name_tag {
-  font-size: 28px;
-}
-
-.portrait {
-  border-radius: 2px;
-  border: 1.5px solid orange;
-  outline: 1px solid black;
+  font-size: 42px;
 }
 
 .education_tag {
@@ -43,11 +37,9 @@
 
 @media screen and (min-width: 600px) {
   .banner_head {
-    padding: 10px 30px;
-  }
-
-  .name_tag {
-    font-size: 42px;
+    padding: 10px 10px;
+    justify-content: start;
+    text-align: left;
   }
 
   .banner {

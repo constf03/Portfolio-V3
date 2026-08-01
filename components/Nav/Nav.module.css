@@ -24,25 +24,25 @@
   align-items: center;
   justify-content: center;
   background: var(--location-bar-bg);
-  border-top: 2px solid orange;
-  border-left: 2px solid orange;
-  border-right: 2px solid orange;
+  border-top: 2px solid var(--secondary);
+  border-left: 2px solid var(--secondary);
+  border-right: 2px solid var(--secondary);
   border-radius: 2px 2px 0px 0px;
 }
 
 .linkbox:hover {
-  background: var(--dual-orange-hover);
+  background: var(--dual-secondary-hover);
 }
 
 .linkbox_current {
-  background: var(--dual-orange);
+  background: var(--dual-secondary);
 }
 
 .linkbox:hover,
 .linkbox_current {
-  border-top: 2px solid rgb(0, 128, 255);
-  border-left: 2px solid rgb(0, 128, 255);
-  border-right: 2px solid rgb(0, 128, 255);
+  border-top: 2px solid var(--primary);
+  border-left: 2px solid var(--primary);
+  border-right: 2px solid var(--primary);
 }
 
 .linkbox a {
