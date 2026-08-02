@@ -87,7 +87,7 @@ export default function Page() {
 
                 <p>
                   Below are some of the demo showcase videos from development
-                  phase (2024-25)
+                  phase (2024-25).
                 </p>
 
                 <br></br>
@@ -95,6 +95,8 @@ export default function Page() {
                 <div className="mt-4 mb-4">
                   <Video src={Video01} />
                 </div>
+
+                <br></br>
 
                 <div className="mt-4 mb-4">
                   <Video src={Video02} />
