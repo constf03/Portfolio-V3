@@ -4,6 +4,9 @@ import { ReactNode } from "react";
 export const metadata: Metadata = {
   title: `Full Stack Game: "Meteorite Destroyers" (2023) - Stefano Confalone Sofware Development Portfolio`,
   description: "Software development portfolio projects showcase page.",
+  robots: {
+    index: false,
+  },
 };
 
 export default function RootLayout({

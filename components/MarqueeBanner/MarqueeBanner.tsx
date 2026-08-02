@@ -8,33 +8,23 @@ export default function MarqueeBanner() {
       <Marquee speed={100}>
         <span>&#128203;Skills: </span>
         {/* prettier-ignore */ "     "}
-        <span>&#127760;Full stack web and mobile development</span>
+        <span>✅🌐Full Stack Web & Mobile Development</span>
         {/* prettier-ignore */ "     "}
-        <span>✅Typescript, React, Next.js, React Native & Expo</span>
+        <span>✅🔍Search Engine Optimization</span>
         {/* prettier-ignore */ "     "}
-        <span>&#127912;Web Styles</span>
+        <span>✅🏢Backend Services & RestAPIs</span>
         {/* prettier-ignore */ "     "}
-        <span>✅CSS, SCSS, Bootstrap, Tailwinds, MUI</span>
+        <span>✅🗃️SQL & NoSQL Databases</span>
         {/* prettier-ignore */ "     "}
-        <span>🔍SEO</span>
+        <span>✅☁️Cloud Services & App Deployment</span>
         {/* prettier-ignore */ "     "}
-        <span>&#128187;Server Programming</span>
+        <span>✅🚢Docker, CI/CD pipelines</span>
         {/* prettier-ignore */ "     "}
-        <span>✅Node.js, Express, Sequelize</span>
+        <span>✅🔧Unit Testing</span>
         {/* prettier-ignore */ "     "}
-        <span>&#128196;Data modelling, request handling, middleware</span>
+        <span>✅⚡Power Platform Low Code Development</span>
         {/* prettier-ignore */ "     "}
-        <span>🗃SQL & No-SQL databases</span>
-        {/* prettier-ignore */ "     "}
-        <span>✅PostgreSQL, MongoDB</span>
-        {/* prettier-ignore */ "     "}
-        <span>☁Cloud Deployment & CI</span>
-        {/* prettier-ignore */ "     "}
-        <span>✅Azure, AWS, Aiven</span>
-        {/* prettier-ignore */ "     "}
-        <span>🚢Docker Containerizing</span>
-        {/* prettier-ignore */ "     "}
-        <span>⚡Power Platform Low-Code Apps</span>
+        <span>✅🖼️Software UI Design & Prototyping</span>
         {/* prettier-ignore */ "     "}
         <span>And More!👌</span>
         {/* prettier-ignore */ "                                             "}

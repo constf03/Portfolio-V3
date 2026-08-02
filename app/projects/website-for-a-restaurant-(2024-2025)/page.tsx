@@ -30,91 +30,93 @@ export default function Page() {
                 </header>
 
                 <p>
-                  {`
-                  In my Summer 2024 internship I began working on a
-                  full stack website project for restaurant Ravintola Johnny Hong
-                  Kong Hyvinkää with PERN stack (Postgres, Express, React, Node.js). My internship was hosted under the name of my supervisor's toiminimi and he is the co-owner of the restaurant.
-                `}
+                  In May 2024 I started developing a new website for restaurant
+                  Johnny Hong Kong Hyvinkää (
+                  <a href="https://ravintolajohnny.fi">ravintolajohnny.fi</a>)
+                  and I was the main web developer during May-August 2024 and
+                  April-August 2025. Our base technology stack was React,
+                  Express, Node.js and PostgreSQL.
                 </p>
 
-                <p>
-                  Link to the website:{" "}
-                  <a href="https://ravintolajohnny.fi" target="blank">
-                    ravintolajohnny.fi
-                  </a>
-                </p>
+                <br></br>
 
                 <p>
-                  During my first internship (2024) I managed to implement the
-                  following features to the site:
+                  I implemented many core functionalities and business logic
+                  across the website and API that are still in use including:
                 </p>
                 <ul>
-                  <li>responsive UI</li>
-                  <li>user authentication with Auth0</li>
-                  <li>updating user information</li>
+                  <li>{`the website's responsive layout & customer-friendly structure`}</li>
+                  <li>menu system, shopping cart & checkout</li>
                   <li>
-                    products to food menu (dynamically loaded JSON objects)
+                    ordering System with Twilio SMS verification and real-time
+                    status update (pending, accepted, rejected etc.)
                   </li>
-                  <li>shopping cart system</li>
-                  <li>admin user feature and admin panel</li>
                   <li>
-                    ordering system with real-time order status update (no
-                    payment integration yet)
+                    user authentication (originally with Auth0 but later only
+                    JWT)
                   </li>
-                  <li>translations in Finnish and English (i18n).</li>
+                  <li>
+                    admin user functionality (CRUD operations for customer sent
+                    orders)
+                  </li>
+                  <li>translations Finnish & English with i18n</li>
+                  <li>and many more details.</li>
                 </ul>
 
+                <br></br>
+
                 <p>
-                  Below is a demo showcase of what the website looked like in
-                  2024. In the demo I also show the admin panel.
+                  Many of the listed features were improved and polished by my
+                  friend (co-owner of the restaurant and supervisor of my
+                  2024-25 internships) when the website was finally pushed into
+                  production for customers in May 2026. Many new features across
+                  web and API were added too.
                 </p>
+
+                <br></br>
+
+                <p>
+                  Originally the website and API were hosted on AWS Elastic
+                  Container Service (Docker Containers), with SSL domain, load
+                  balancers and Codebuild CI/CD configured. But due to economic
+                  reasons we moved to Google Cloud as it was cheaper and hosted
+                  the website and API on VMs via reverse proxy with Caddy.
+                </p>
+
+                <br></br>
+
+                <p>
+                  Below are some of the demo showcase videos from development
+                  phase (2024-25).
+                </p>
+
+                <br></br>
 
                 <div className="mt-4 mb-4">
                   <Video src={Video01} />
                 </div>
 
-                <p>
-                  {`
-                    A year later in my second Summer internship (2025) under the same toiminimi
-                    I updated the whole website's look making it look more modern and user-friendly.
-                    I improved the site's SEO with React Helmet Async.
-                    I also added a SMS confirmation feature to the order system using Twilio.
-                    Below is another video showing the updated look of the site.
-                  `}
-                </p>
+                <br></br>
 
                 <div className="mt-4 mb-4">
                   <Video src={Video02} />
                 </div>
 
-                <p>
-                  The site was first hosted on AWS Elastic Container Service
-                  where frontend and backend Docker containers ran on https
-                  protocol, but it was later moved to Google Cloud and hosted
-                  using a reverse proxy on a Linux VM. When it was hosted on
-                  AWS, code was deployed from the main branch using Codebuild.
-                </p>
+                <br></br>
+
+                <h3>Technologies, Frameworks & Libraries</h3>
 
                 <p>
-                  Main technologies used:{" "}
-                  <b>
-                    Node.js, Express, React, TypeScript, RestAPI, PostgreSQL,
-                    Docker
-                  </b>
+                  Frontend: Typescript, React, Vite, shadcn/ui, MUI, Tailwinds,
+                  Docker
                 </p>
-
+                <p>Backend: Typescript, Node.js, Express, Sequelize, Docker</p>
+                <p>Database: PostgreSQL</p>
                 <p>
-                  Frameworks & Libraries:{" "}
-                  <b>Sequelize, Tailwinds, Vite, Auth0, MUI</b>
+                  Platforms & Cloud services: GitHub, Auth0, Amazon Web
+                  Services, Aiven, Google Cloud
                 </p>
-
-                <p>
-                  Platforms:{" "}
-                  <b>
-                    GitHub, Aiven, Amazon Web Services (Elastic Container
-                    Service, Codebuild, Route 53)
-                  </b>
-                </p>
+                <p>CI/CD: Codebuild (AWS)</p>
               </article>
             </div>
           </Content>

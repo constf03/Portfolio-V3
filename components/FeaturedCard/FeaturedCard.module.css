@@ -4,7 +4,7 @@
   gap: 12px;
   padding: 0px;
   margin: 0px 0px 6px 0px;
-  border: 1px solid orange;
+  border: 1px solid var(--secondary);
   outline: 1px solid black;
   border-radius: 2px;
   background-image: url("../../public/images/vista.png");
@@ -33,5 +33,5 @@
   align-items: center;
   justify-self: center;
   width: 128px;
-  border-right: 4px solid orange;
+  border-right: 4px solid var(--secondary);
 }

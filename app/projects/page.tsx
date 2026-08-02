@@ -26,10 +26,12 @@ export default function ProjectsPage() {
           <BreadcrumbBar />
           <Content>
             <section style={{ marginBottom: "100px", padding: "8px" }}>
-              <article>
-                <h1>Projects Showcase</h1>
-                <p>Here you can find links to my showcased projects.</p>
-              </article>
+              <div className="content-box-wrapper-md">
+                <article className="container-content-box">
+                  <h1>Projects Showcase</h1>
+                  <p>Here you can find links to my showcased projects.</p>
+                </article>
+              </div>
 
               <section className="container-showcase">
                 <ProjectCard
