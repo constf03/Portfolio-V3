@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  border: 1px solid orange;
+  border: 1px solid var(--secondary);
   outline: 2px solid black;
   border-radius: 2px;
   backdrop-filter: blur(2px);
@@ -19,7 +19,7 @@
 }
 
 .project_card_image {
-  border-bottom: 8px solid orange;
+  border-bottom: 8px solid var(--secondary);
 }
 
 .wrapper_project_card_body {
@@ -50,6 +50,6 @@
 }
 
 .wrapper_project_card_button button:hover {
-  background: var(--dual-orange-hover);
+  background: var(--dual-secondary-hover);
   cursor: pointer;
 }
