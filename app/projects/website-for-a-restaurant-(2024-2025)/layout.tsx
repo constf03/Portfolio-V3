@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title:
     "Website For a Restaurant (2024-2025) - Stefano Confalone Sofware Development Portfolio",
   description: "Software development portfolio projects showcase page.",
+  robots: {
+    index: false,
+  },
 };
 
 export default function Layout({

@@ -4,6 +4,9 @@ import { ReactNode } from "react";
 export const metadata: Metadata = {
   title: "KRJ Admin (2025) - Stefano Confalone Sofware Development Portfolio",
   description: "Software development portfolio projects showcase page.",
+  robots: {
+    index: false,
+  },
 };
 
 export default function Layout({
