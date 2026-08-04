@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { StaticImageData } from "next/image";
+import PlaceholderImage from "@/public/images/placeholder.png";
 import styles from "./ProjectCard.module.css";
 
 interface ProjectCardProps {
   title: string;
   topic: string;
-  imgSrc: string | StaticImageData;
+  imgSrc?: string | StaticImageData;
   imgAltText: string;
   description: string;
   buttonText?: string;
@@ -16,7 +17,7 @@ interface ProjectCardProps {
 export default function ProjectCard({
   title,
   topic,
-  imgSrc,
+  imgSrc = PlaceholderImage,
   imgAltText,
   description,
   buttonText = "Read more about this project",

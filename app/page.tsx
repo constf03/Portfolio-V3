@@ -80,7 +80,7 @@ function WebSiteList() {
         <div style={{ display: "flex", flexWrap: "wrap", columnGap: 6 }}>
           {sites.map((site, index) => {
             return (
-              <a href={site.url} key={index} style={{}}>
+              <a href={site.url} key={index}>
                 {site.name}
               </a>
             );
@@ -119,9 +119,7 @@ export default function HomePage() {
                 <article className="container-content-box">
                   <h2>Welcome! Tervetuloa! &#128075;</h2>
 
-                  <p>
-                    Welcome to my web portfolio, powered with Next.js.
-                  </p>
+                  <p>Welcome to my web portfolio, powered with Next.js.</p>
 
                   <p>
                     I graduated Jyväskylä University of Applied Sciences (Jamk)
@@ -133,6 +131,16 @@ export default function HomePage() {
                     On this website you can find showcases of my software
                     development projects and information about my competences.{" "}
                     <b>Check out the Projects tab!</b>
+                  </p>
+
+                  <br></br>
+
+                  <p>
+                    Links:{" "}
+                    <a href="https://www.linkedin.com/in/stefano-confalone-a0ba352a7/">
+                      LinkedIn
+                    </a>{" "}
+                    | <a href="https://github.com/constf03">GitHub</a>
                   </p>
                 </article>
               </div>

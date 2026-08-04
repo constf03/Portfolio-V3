@@ -18,15 +18,15 @@ export default function AboutPage() {
           <BreadcrumbBar />
           <Content>
             <section style={{ marginBottom: "100px", padding: "8px" }}>
-              {/*WHOAMI SECTION START*/}
-              <div
-                className="content-box-wrapper"
-                style={{ marginBottom: "24px" }}
-              >
-                <article className="container-content-box">
-                  <h2>What Kind of Developer Am I?</h2>
-                  <p>
-                    {`
+              {/*WHOAMI SECTION START
+                <div
+                  className="content-box-wrapper"
+                  style={{ marginBottom: "24px" }}
+                >
+                  <article className="container-content-box">
+                    <h2>What Kind of Developer Am I?</h2>
+                    <p>
+                      {`
                       I am a software developer who is passionate about everything
                       technology-related.
                       While my core expertise lies within full stack web development,
@@ -42,10 +42,10 @@ export default function AboutPage() {
                       My scope is to continue to grow in my field and possibly share my
                       knowledge and skills with others in the future!
                     `}
-                  </p>
-                </article>
-              </div>
-              {/*WHOAMI SECTION END*/}
+                    </p>
+                  </article>
+                </div>
+                WHOAMI SECTION END*/}
 
               {/*LANGUAGES SECTION START*/}
               <div
@@ -124,7 +124,7 @@ export default function AboutPage() {
                         Technology
                       </b>
                     </h3>
-                    <span>Jyväskylä University of Applied Sciences</span>
+                    <span>JAMK University of Applied Sciences</span>
                     <span>August 2022 - December 2025</span>
                   </div>
 
