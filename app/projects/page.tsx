@@ -4,7 +4,6 @@ import BreadcrumbBar from "@/components/BreadcrumbBar/BreadcrumbBar";
 import Content from "@/components/Content/Content";
 import Footer from "@/components/Footer/Footer";
 import Nav from "@/components/Nav/Nav";
-import Image00 from "@/public/images/placeholder.png";
 import Image01 from "@/public/images/krj_website_preview.jpg";
 import Image02 from "@/public/images/offerletterapp_preview.png";
 import Image03 from "@/public/images/game_preview.png";
@@ -101,7 +100,6 @@ export default function ProjectsPage() {
                 <ProjectCard
                   title="Figma Software Design Projects"
                   topic="software design"
-                  imgSrc={Image00}
                   imgAltText="Figma Software Design projects thumbnail"
                   description="These are some of my software design projects that I have
                     done with Figma."

@@ -80,7 +80,7 @@ function WebSiteList() {
         <div style={{ display: "flex", flexWrap: "wrap", columnGap: 6 }}>
           {sites.map((site, index) => {
             return (
-              <a href={site.url} key={index} style={{}}>
+              <a href={site.url} key={index}>
                 {site.name}
               </a>
             );
