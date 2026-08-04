@@ -23,10 +23,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--location-bar-bg);
+  background: var(--dual-primary);
   border-top: 2px solid var(--secondary);
-  border-left: 2px solid var(--secondary);
-  border-right: 2px solid var(--secondary);
+  border-left: 2px solid var(--secondary-hover);
+  border-right: 2px solid var(--secondary-two);
   border-radius: 2px 2px 0px 0px;
 }
 
@@ -41,8 +41,8 @@
 .linkbox:hover,
 .linkbox_current {
   border-top: 2px solid var(--primary);
-  border-left: 2px solid var(--primary);
-  border-right: 2px solid var(--primary);
+  border-left: 2px solid var(--primary-hover);
+  border-right: 2px solid var(--primary-two);
 }
 
 .linkbox a {
