@@ -25,10 +25,6 @@ function WebSiteList() {
       url: "https://www.wikipedia.org/",
     },
     {
-      name: "Alt Zone",
-      url: "https://altzone.fi/en",
-    },
-    {
       name: "Johnny Hong Kong",
       url: "https://ravintolajohnny.fi/",
     },
