@@ -11,7 +11,7 @@ export default function ContactPage() {
   const EMAIL_USER = ["stefano", "confalone03"].join(".");
   const EMAIL_DOMAIN = ["gmail", "com"].join(".");
 
-  const PrivacyEmail = () => {
+  const Email = () => {
     const [email, setEmail] = useState<string | null>(null);
 
     useEffect(() => {
@@ -21,6 +21,18 @@ export default function ContactPage() {
     if (!email) return null;
 
     return <a href={`mailto:${email}`}>{email}</a>;
+  };
+
+  const Phone = () => {
+    const [phone, setPhone] = useState<string>("");
+
+    useEffect(() => {
+      setPhone("+358 45 324 3803");
+    }, []);
+
+    if (!phone) return null;
+
+    return <span>{phone}</span>;
   };
 
   return (
@@ -51,9 +63,11 @@ export default function ContactPage() {
                     }}
                   >
                     <li>
-                      Email: <PrivacyEmail />
+                      Email: <Email />
                     </li>
-                    <li>Phone: +358 45 324 3803</li>
+                    <li>
+                      Phone: <Phone />
+                    </li>
                     <li>
                       LinkedIn:{" "}
                       <a

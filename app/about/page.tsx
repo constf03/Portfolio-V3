@@ -18,35 +18,6 @@ export default function AboutPage() {
           <BreadcrumbBar />
           <Content>
             <section style={{ marginBottom: "100px", padding: "8px" }}>
-              {/*WHOAMI SECTION START
-                <div
-                  className="content-box-wrapper"
-                  style={{ marginBottom: "24px" }}
-                >
-                  <article className="container-content-box">
-                    <h2>What Kind of Developer Am I?</h2>
-                    <p>
-                      {`
-                      I am a software developer who is passionate about everything
-                      technology-related.
-                      While my core expertise lies within full stack web development,
-                      I am also proficient in mobile development, low-code development
-                      and many other things.
-                      I'm always looking to learn more to expand and improve my coding and
-                      developer thinking skills.
-                      I am focused to write clean, consistent and understandable code for
-                      better project management.
-                      Practice, working on various projects and receiving constructive
-                      feedback in Git pull request reviews have been important factors in my
-                      software development learning progress.
-                      My scope is to continue to grow in my field and possibly share my
-                      knowledge and skills with others in the future!
-                    `}
-                    </p>
-                  </article>
-                </div>
-                WHOAMI SECTION END*/}
-
               {/*LANGUAGES SECTION START*/}
               <div
                 className="content-box-wrapper"
@@ -82,6 +53,12 @@ export default function AboutPage() {
                         "Volunteer NestJS Backend developer for Alt Zone project."
                       }
                     </span>
+                    <span>
+                      Repo:{" "}
+                      <a href="https://github.com/Alt-Org/Altzone-Server">
+                        https://github.com/Alt-Org/Altzone-Server
+                      </a>
+                    </span>
                   </div>
 
                   <div className="container-work-expr">
@@ -89,8 +66,12 @@ export default function AboutPage() {
                       <b>Thesis work (Riihisoft Oy)</b>
                     </h3>
                     <span>June-December 2025</span>
+                    <span>{"Bachelor's thesis: Low-code development"}</span>
                     <span>
-                      {"Bachelor's thesis work: Low-code development"}
+                      Thesis:{" "}
+                      <a href="https://www.theseus.fi/handle/10024/905064">
+                        https://www.theseus.fi/handle/10024/905064
+                      </a>
                     </span>
                   </div>
 
