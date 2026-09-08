@@ -27,13 +27,13 @@ export default function ContactPage() {
     const [phone, setPhone] = useState<string>("");
 
     useEffect(() => {
-      setPhone("+358 45 324 3803")
+      setPhone("+358 45 324 3803");
     }, []);
 
-    if (!phone) return null
+    if (!phone) return null;
 
-    return <span>{phone}</span>
-  }
+    return <span>{phone}</span>;
+  };
 
   return (
     <>
@@ -65,7 +65,9 @@ export default function ContactPage() {
                     <li>
                       Email: <Email />
                     </li>
-                    <li>Phone: <Phone /></li>
+                    <li>
+                      Phone: <Phone />
+                    </li>
                     <li>
                       LinkedIn:{" "}
                       <a
