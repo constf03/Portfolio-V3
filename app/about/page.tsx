@@ -53,6 +53,12 @@ export default function AboutPage() {
                         "Volunteer NestJS Backend developer for Alt Zone project."
                       }
                     </span>
+                    <span>
+                      Repo:{" "}
+                      <a href="https://github.com/Alt-Org/Altzone-Server">
+                        https://github.com/Alt-Org/Altzone-Server
+                      </a>
+                    </span>
                   </div>
 
                   <div className="container-work-expr">
@@ -60,8 +66,12 @@ export default function AboutPage() {
                       <b>Thesis work (Riihisoft Oy)</b>
                     </h3>
                     <span>June-December 2025</span>
+                    <span>{"Bachelor's thesis: Low-code development"}</span>
                     <span>
-                      {"Bachelor's thesis work: Low-code development"}
+                      Thesis:{" "}
+                      <a href="https://www.theseus.fi/handle/10024/905064">
+                        https://www.theseus.fi/handle/10024/905064
+                      </a>
                     </span>
                   </div>
 
